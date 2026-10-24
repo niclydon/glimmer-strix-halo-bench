@@ -78,7 +78,13 @@ fragment and a clock reading.
 After the changes above, the full pattern scan was re-run over the
 repository and the article: no credential material, no email or phone
 patterns, no private-network addresses other than loopback, and none
-of the personal-name markers remain. The article copy in this repo is
-byte-identical to the approved draft (SHA-256 checked). The article
-itself contains no addresses, identifiers, or personal names beyond
-the author's own machine and project names.
+of the personal-name markers remain. The article itself contains no
+addresses, identifiers, or personal names beyond the author's own
+machine and project names.
+
+The publication copy of the article in this repo (`article/ARTICLE.md`)
+differs from the approved draft in exactly three mechanical ways: the
+internal draft banner was removed, the chart image paths were adjusted
+to this repo's layout (`article/`), and the file was renamed from
+ARTICLE-DRAFT.md. No sentence of the body was changed in this pass;
+everything else in this document refers to the package as scanned.

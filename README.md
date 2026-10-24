@@ -21,19 +21,25 @@ claims are scoped to what those records support.
 - `data/` — raw machine-readable results, grouped by run:
   - `crucible-sweep/` — llama-bench and server-path JSON from the
     Crucible context-depth sweep (Oct 19).
+  - `tuning/` — the October 18 tuning run's raw JSON (two result
+    files; the prose-workload payloads themselves are withheld, see
+    "What's withheld, and why").
   - `w1/` — Furnace window 1 (Oct 20): HIP vs Vulkan llama-bench JSON,
-    the DFlash server sweep results.
+    the DFlash server sweep results, and `forge-smoke.json`, the
+    post-restore Forge smoke result.
   - `w2/` — Furnace window 2 / Phase 3 (Oct 22): the full results JSON
     (serving matrix, 131k KV cells, prefill focus, agent suite, greedy
-    reproducibility, reasoning tax).
+    reproducibility, reasoning tax), and `forge-smoke.json`.
   - `w3/` — Furnace window 3 / Phase 4 (Oct 24): quant ladder
     llama-bench JSON, full results JSON, analysis JSON, 1 Hz power
-    samples (`power.csv`), phase boundaries (`phases.csv`), and the
-    vision test image (`vision-test.png`).
+    samples (`power.csv`), phase boundaries (`phases.csv`), the
+    vision test image (`vision-test.png`), and `forge-smoke.json`.
 - `harness/` — the bench and analysis scripts that produced the data,
   plus the chart script.
 - `environment/` — `MANIFEST.md`: hosts, software builds, and the model
-  files (names, sizes, SHA-256) as recorded at bench time.
+  files (names, sizes, SHA-256) as recorded at bench time; `raw/`
+  holds the per-window environment manifests captured on Furnace at
+  each window.
 
 ## Article section → backing record and data
 
