@@ -1,5 +1,26 @@
 # Furnace Bench Window 3 — Phase 4 Results
 
+## Interpretation note - added 2026-10-24, after independent review
+
+Four corrections. (1) The quant quality language below overstates the
+suite: the tool-call score is a signature check (expected function
+plus one required argument key), this run did not retain full
+arguments, and equal scores do not establish quality equivalence.
+(2) The soak's two per-request rate clusters (9.1-16.4 and 55-84
+tok/s) have no recorded outputs or acceptance counters; their cause
+is unverified and they should not be attributed to window 1's
+acceptance patterns. (3) Counts: the power CSV holds 6,757
+measurement rows plus its header; the soak slice is 1,826 rows.
+(4) One stored field was wrong in the original capture: stddev_ns
+for the UD-Q5_K_XL depth-0 tg128 row read 3,345,753,631 ns against
+its own samples ([20100486487, 17570304335, 19889302226] ns; sample
+stdev 1,403,814,549.29 ns). The publication copies of the data
+correct the derived field from the samples; token/s figures were
+always consistent and unaffected. Thermal language below is scoped
+to the single 30-minute soak described. The original text below is
+unchanged.
+
+
 Glimmer benchmark program, Furnace (GMKtec EVO-X2, Ryzen AI Max+ 395 / Radeon 8060S gfx1151).
 Phase 4 per `FURNACE-BENCH-PLAN.md`: quant ladder (UD-Q4_K_XL vs UD-Q5_K_XL vs UD-Q6_K_XL), power and thermal (1 Hz rocm-smi through the runs plus a 30-minute sustained decode soak), and the mmproj vision stretch.
 Raw data: Furnace `~/glimmer-furnace-bench/results-w3/` (`results-w3.json`, per-quant `llamabench-*.json`, `power.csv` 1 Hz samples, `phases.csv` phase boundaries, per-config server logs, `environment-manifest.txt`, window-open / download / restore logs, `forge-smoke.json`, `vision-test.png`). Harness: `bench_w3.py` + `w3_power_sampler.py` + `analyze_w3.py` in this directory (copies on Furnace in `~/glimmer-furnace-bench/`).

@@ -1,5 +1,23 @@
 # Furnace Bench Window 2 — Phase 3 Results
 
+## Interpretation note - added 2026-10-24, after independent review
+
+Four corrections. (1) Where this record implies a comparison held
+everything else constant, the greedy comparison in fact changed
+server slot count alongside the draft configuration (parallel 2
+draft-on vs parallel 1 draft-off); the article discloses the
+covariate. (2) The external ~21% KV figure came from a secondary
+summary on different hardware and a different model; the local
+30.2% measurement stands on its own and neither confirms nor is
+confirmed by that figure's mechanism. (3) The derived cache_hit_rate
+field in results-w2.json is defective (it divides cached tokens by
+processed tokens and can exceed 1); the article's percentages use
+cached/(cached + processed) and are correct. (4) The incident
+narrative used in the reasoning-tax test is synthetic, composed as a
+string literal in the test harness for this bench; it is not a record
+of a real incident. The original text below is unchanged.
+
+
 Glimmer benchmark program, Furnace (GMKtec EVO-X2, Ryzen AI Max+ 395 / Radeon 8060S gfx1151).
 Phase 3 per `FURNACE-BENCH-PLAN.md`: serving shape (context × parallel slots), KV f16 vs q8_0 at full 131k depth, prefill ubatch/batch focus, and the agent workload suite on the real serving path.
 Raw data: Furnace `~/glimmer-furnace-bench/results-w2/` (`results-w2.json`, per-config server logs, `environment-manifest.txt`, window-open and restore logs, pre-window and post-restore `/running` snapshots, Forge smoke response). Harness: `bench_w2.py` in this directory (run on Furnace, detached, incremental JSON writes).

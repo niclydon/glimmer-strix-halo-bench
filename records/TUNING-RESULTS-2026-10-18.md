@@ -1,5 +1,17 @@
 # Glimmer tuning bench results, Crucible, October 18, 2026
 
+## Interpretation note - added 2026-10-24, after independent review
+
+Two scopings. (1) The cold agent-turn figures in this record are
+single first-cold observations per configuration, each followed by a
+warm-prefix run; treat fine-grained cold rankings as preliminary.
+Configuration-specific nonces also changed prompts between settings.
+(2) The broad prose-versus-agent draft-length rules stated below are
+local observations on the shapes measured here (one prose shape, one
+agent prompt shape), not general laws; the article's Lesson one
+carries the scoped version. The original text below is unchanged.
+
+
 Muse Glimmer 30B (unsloth UD-Q4_K_XL + DFlash drafter) on a Ryzen AI Max+ 395 (Strix Halo, gfx1151, ROCm 7.2.1, llama.cpp b11719). Direct llama-server instances on a scratch port, one config per cell, llama.cpp `timings` as the metric source, temperature 0, 2 runs per cell. Raw data: Crucible `~/glimmer-tune/results-20261018-171138.json` (matrix) and `results-20261018-173706.json` (validation cell). Harness: `~/workspace/glimmer/tune_bench.py`.
 
 ## Measures

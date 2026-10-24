@@ -22,11 +22,11 @@ pp8 = [393.63, 383.11, 357.23, 330.63, 278.14]; pp8_e = [2.59, 1.58, 1.55, 1.05,
 fig, ax = plt.subplots(1, 2, figsize=(9.2, 3.6))
 ax[0].errorbar(DLAB, tg, yerr=tg_e, marker="o", color=HIP, capsize=3)
 ax[0].set_title("Decode (tg128) is flat with depth")
-ax[0].set_ylabel("tok/s"); ax[0].set_xlabel("context depth")
+ax[0].set_ylabel("tok/s"); ax[0].set_xlabel("context depth (tokens; spacing not to scale)")
 ax[1].errorbar(DLAB, pp5, yerr=pp5_e, marker="o", label="pp512", capsize=3)
 ax[1].errorbar(DLAB, pp8, yerr=pp8_e, marker="s", label="pp8192", capsize=3)
 ax[1].set_title("Prefill pays the depth cost")
-ax[1].set_ylabel("tok/s"); ax[1].set_xlabel("context depth"); ax[1].legend()
+ax[1].set_ylabel("tok/s"); ax[1].set_xlabel("context depth (tokens; spacing not to scale)"); ax[1].legend()
 fig.tight_layout(); fig.savefig("chart-depth.png"); plt.close(fig)
 
 # --- 2. HIP vs Vulkan decode at depth, Furnace W1 canonical (ubatch 512) ----
@@ -37,10 +37,10 @@ fig, ax = plt.subplots(figsize=(6.4, 3.8))
 ax.errorbar(DLAB, vk_tg, yerr=vk_e, marker="s", color=VK, capsize=3, label="Vulkan tg128")
 ax.errorbar(DLAB, hip_tg, yerr=hip_e, marker="o", color=HIP, capsize=3, label="HIP tg128 (ubatch 512)")
 # ubatch-256 baseline point from the same record's DFlash-settings table.
-ax.plot(["32k"], [11.12], marker="D", color=HIP, markersize=7,
-        label="HIP tg128 at 32k, ubatch 256 (11.12)")
+ax.errorbar(["32k"], [11.12], yerr=[0.94], marker="D", color=HIP, markersize=7,
+        capsize=3, label="HIP tg128 at 32k, ubatch 256 (11.12 ± 0.94)")
 ax.set_title("Decode at depth: the HIP cliff is ubatch-sensitive")
-ax.set_ylabel("tok/s"); ax.set_xlabel("context depth"); ax.legend(fontsize=8.5)
+ax.set_ylabel("tok/s"); ax.set_xlabel("context depth (tokens; spacing not to scale)"); ax.legend(fontsize=8.5)
 fig.tight_layout(); fig.savefig("chart-hip-vulkan.png"); plt.close(fig)
 
 # --- 3. Quant ladder decode ---------------------------------------------------
@@ -63,11 +63,11 @@ fig.tight_layout(); fig.savefig("chart-quant.png"); plt.close(fig)
 fig, ax = plt.subplots(1, 2, figsize=(7.6, 3.4))
 ax[0].bar(["f16", "q8_0"], [14.35, 10.03], yerr=[0.67, 1.01], capsize=4,
           color=[VK, HIP])
-ax[0].set_title("Decode at 131k: q8_0 −30.2%")
+ax[0].set_title("Decode: q8_0 −30.2%\n(124k filled in 131k ctx)", fontsize=10)
 ax[0].set_ylabel("tok/s")
 ax[1].bar(["f16", "q8_0"], [274.52, 260.10], yerr=[7.24, 13.53], capsize=4,
           color=[VK, HIP])
-ax[1].set_title("Prefill at 131k: q8_0 −5.3% (noise range)")
+ax[1].set_title("Prefill: q8_0 −5.3%\n(124k filled in 131k ctx)", fontsize=10)
 ax[1].set_ylabel("tok/s")
 fig.tight_layout(); fig.savefig("chart-kv.png"); plt.close(fig)
 

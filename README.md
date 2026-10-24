@@ -46,10 +46,10 @@ claims are scoped to what those records support.
 | Article section | Record | Data / harness |
 |---|---|---|
 | The setup | all records; `environment/MANIFEST.md` | — |
-| Lesson one: the right draft length depends on what the model is doing | `records/TUNING-RESULTS-2026-10-18.md`, `records/BENCH-2026-10-18.md` | `harness/tune_bench.py`, `harness/bench.py`; story-sweep cross-check in `data/w1/dflash-server-results.json` |
+| Lesson one: the right draft length depends on what the model is doing | `records/TUNING-RESULTS-2026-10-18.md`, `records/BENCH-2026-10-18.md` | `harness/tune_bench.py`, `harness/bench.py` |
 | Depth: decode is flat, prefill pays | `records/CRUCIBLE-SWEEP-2026-10-19.md` | `data/crucible-sweep/bench_pp512_tg128.json`, `data/crucible-sweep/bench_pp8192.json`, `data/crucible-sweep/server_tg.json`; `article/chart-depth.png` |
 | HIP versus Vulkan, and an honest loose end | `records/FURNACE-BENCH-W1-RESULTS.md` | `data/w1/llamabench-hip-*.json`, `data/w1/llamabench-vulkan-*.json`; `harness/glimmer_llamabench.sh`; `article/chart-hip-vulkan.png` |
-| Speculation at depth is bimodal, and greedy is not greedy | `records/FURNACE-BENCH-W1-RESULTS.md` (DFlash at depth); `records/FURNACE-BENCH-W2-RESULTS.md` (greedy reproducibility) | `data/w1/dflash-server-results.json`; `data/w2/results-w2.json`; `harness/bench_w2.py` |
+| Speculation at depth: what the sweep actually measured; Greedy is not greedy | `records/FURNACE-BENCH-W1-RESULTS.md` (DFlash at depth, plus its 2026-10-24 interpretation note); `records/FURNACE-BENCH-W2-RESULTS.md` (greedy reproducibility) | `data/w1/dflash-server-results.json`; `data/w2/results-w2.json`; `harness/dflash_bench.py`, `harness/bench_w2.py` |
 | KV cache at 131k: the deficit lives in decode | `records/FURNACE-BENCH-W2-RESULTS.md` | `data/w2/results-w2.json`; `harness/bench_w2.py`; `article/chart-kv.png` |
 | The quant ladder | `records/FURNACE-BENCH-W3-RESULTS.md` | `data/w3/llamabench-UD-Q4_K_XL.json`, `data/w3/llamabench-UD-Q5_K_XL.json`, `data/w3/llamabench-UD-Q6_K_XL.json`, `data/w3/results-w3.json`, `data/w3/analysis-w3.json`; `harness/bench_w3.py`, `harness/analyze_w3.py`; `article/chart-quant.png` |
 | Serving shape: slots buy concurrency, not speed | `records/FURNACE-BENCH-W2-RESULTS.md` | `data/w2/results-w2.json` |
@@ -62,6 +62,34 @@ claims are scoped to what those records support.
 The three Furnace windows follow `records/FURNACE-BENCH-PLAN.md`
 (Phases 2, 3, and 4; Phase 1 was the Crucible tuning and sweep work).
 
+## Reproduction: what is exact, what is historical
+
+The harness scripts are the programs as run, with the exceptions and
+gaps named here. Treat this package as a successful-result export
+with full data, not a complete attempt ledger.
+
+- llama-bench cells: `harness/glimmer_llamabench.sh` is a historical
+  partial script. It covers depths 0 and 32,768 only, does not pin
+  the 3-repetition counts, passes draft flags the pinned llama-bench
+  build rejects, and can report COMPLETE after a failed command. The
+  published cells' parameters are in the records and the JSON.
+- DFlash server sweep (window 1): `harness/dflash_bench.py` is the
+  run script.
+- Crucible sweep: the run scripts named in
+  `records/CRUCIBLE-SWEEP-2026-10-19.md` were session scripts and are
+  not in this package; the sweep's data and record are complete.
+- Longtext: the run used a patched single-cell variant (n-max 15, no
+  ubatch 256). `harness/longtext_bench.py` (n-max 3, ubatch 256,
+  four cells) is a related experiment, not the run script.
+- Windows 2 and 3: `harness/bench_w2.py` and `harness/bench_w3.py`
+  are the run scripts. Window 3 overwrote its result files across
+  attempts rather than versioning them; earlier partial attempts are
+  described in the record, not preserved as separate raw versions.
+- Analysis scripts (`analyze_w1/w2/w3.py`) carry hard-coded paths from
+  the bench hosts; they are provenance for the derived tables, not
+  portable entry points. The chart script (`make_charts.py`) plots
+  values transcribed in it from the records.
+
 ## Notes
 
 - Server logs from the bench windows are not included; everything the
@@ -69,21 +97,22 @@ The three Furnace windows follow `records/FURNACE-BENCH-PLAN.md`
 - `FINAL-PASS.md` (repo root) documents the pre-publication privacy and
   sensitivity review of this package: what was scanned, what was
   withheld or changed, and why.
+- `CORRECTIONS.md` (repo root) documents the post-review correction
+  pass of 2026-10-24: the claim corrections, one corrected derived
+  data field, and the open publication decisions.
 
 ## What's withheld, and why
 
 A small number of files from the bench program are not in this repo,
 by design:
 
-- The October 18 prose-workload payloads and their result files. Those
-  tests ran the author's real personal-assistant workloads (morning
-  brief, daily recap, weekly synthesis, insight-gate judge), and the
-  payloads and outputs contain personal and third-party details that
-  are not this package's to publish. The records
-  (`PROSE-WORKLOAD-TEST-2026-10-18.md`,
-  `REASONING-CONTROL-VERDICT-2026-10-18.md`) document the workload
-  shapes, token counts, and results in full; the tuning run's own raw
-  JSON (`data/tuning/`) is included.
+- The October 18 prose-workload payloads and their result files. The
+  prose tests used private personal and third-party material.
+  Payloads and generated prose are excluded; the public records
+  retain workload shapes, token counts, methods, and aggregate
+  results. The records (`PROSE-WORKLOAD-TEST-2026-10-18.md`,
+  `REASONING-CONTROL-VERDICT-2026-10-18.md`) document the workloads;
+  the tuning run's own raw JSON (`data/tuning/`) is included.
 - The window state snapshots (llama-swap `/running` captures taken
   before and after each window). They are operational artifacts
   containing full production command lines, and no article number

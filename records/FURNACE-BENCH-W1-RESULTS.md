@@ -1,5 +1,24 @@
 # Furnace Bench Window 1 — Phase 2 Results
 
+## Interpretation note - added 2026-10-24, after independent review
+
+This record's DFlash-at-depth interpretation (a bimodal acceptance
+distribution, with a high branch near 89 tok/s at n-max 15) does not
+survive inspection of the saved outputs. The three runs per cell were
+three different prompt variants; in every configuration the first two
+variants continue the filler's own list of story instructions
+(acceptance 0.76-1.00) and only the third writes the story (acceptance
+0.09-0.47). The high rates are synthetic prompt-continuation
+throughput, not story-generation performance, and no branch
+probability can be estimated from one run each of three different
+prompts. The same construction affects the shallow story-sweep means
+cited elsewhere as a cross-check. Task-valid residue: the
+story-variant observations (n=1 per cell), e.g. HIP n-max 15 at
+15.34 tok/s vs 11.62 undrafted; Vulkan n-max 15 at 9.74 vs 11.66
+undrafted. The llama-bench backend cells are unaffected. The original
+text below is unchanged.
+
+
 Glimmer benchmark program, Furnace (GMKtec EVO-X2, Ryzen AI Max+ 395 / Radeon 8060S gfx1151).
 Phase 2 per `FURNACE-BENCH-PLAN.md`: canonical llama-bench (HIP vs Vulkan) + DFlash sweep.
 Raw data: Furnace `~/glimmer-furnace-bench/results-w1/` (llama-bench JSON per cell, `dflash-server-results.json`, `summary-w1.txt`, `environment-manifest.txt`, server logs, restore log).

@@ -25,16 +25,15 @@ key from an environment variable by name, with an empty default; no
 value is present.
 
 **Contact and account identifiers: none.** No email addresses, no
-phone numbers, no account IDs.
+phone numbers, no account IDs in tracked file contents. (Git commit
+author/committer metadata is a separate surface; see the open
+publication decision in `CORRECTIONS.md`.)
 
 **Withheld — personal workload content.** The October 18 prose tests
-used the author's real personal-assistant payloads (briefing, recap,
-weekly synthesis, insight gating). The payload files and the result
-files generated from them contain personal details, family
-information (including a minor's activity), health context, and
-third-party financial information. They are excluded from this repo;
-the records document their shapes, sizes, and results. See the
-README's "What's withheld, and why."
+used private personal and third-party material. The payload files and
+the result files generated from them are excluded from this repo; the
+records document their shapes, sizes, and results. See the README's
+"What's withheld, and why."
 
 **Substituted — third-party names in test prompts.** The agent-suite
 prompts in the window 2 and 3 data and harness scripts used four real
@@ -88,3 +87,5 @@ internal draft banner was removed, the chart image paths were adjusted
 to this repo's layout (`article/`), and the file was renamed from
 ARTICLE-DRAFT.md. No sentence of the body was changed in this pass;
 everything else in this document refers to the package as scanned.
+A post-review corrections pass followed on 2026-10-24; see
+`CORRECTIONS.md`.
