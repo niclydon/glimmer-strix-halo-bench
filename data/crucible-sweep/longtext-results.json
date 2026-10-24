@@ -1,0 +1,19 @@
+{
+ "agent-nmax15": {
+  "longtext@4096": {
+   "wall_s": 158.6,
+   "finish": "length",
+   "usage": {
+    "completion_tokens": 4096,
+    "prompt_tokens": 2507,
+    "total_tokens": 6603,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "content": "",
+   "reasoning_chars": 18445,
+   "content_chars": 0
+  }
+ }
+}

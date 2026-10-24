@@ -1,0 +1,2675 @@
+{
+ "started": "2026-10-20T05:32:55Z",
+ "note": "llama-bench b11719 has no draft/spec parameters (invalid parameter -md verified); DFlash via scratch llama-server port 5999 harness pattern.",
+ "configs": [
+  {
+   "build": "hip",
+   "n_max": null,
+   "method": "llama-server scratch port 5999, /completion, temp 0, cache_prompt false",
+   "kv": "f16",
+   "ubatch": 256,
+   "ctx_size": 40960,
+   "cells": {
+    "0": [
+     {
+      "rep": 0,
+      "wall_s": 10.504,
+      "prompt_n": 20,
+      "prompt_ms": 214.974,
+      "prompt_per_second": 93.03450649846029,
+      "predicted_n": 128,
+      "predicted_ms": 10281.908,
+      "predicted_per_second": 12.35179307186954,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 214.974,
+       "prompt_per_token_ms": 10.7487,
+       "prompt_per_second": 93.03450649846029,
+       "predicted_n": 128,
+       "predicted_ms": 10281.908,
+       "predicted_per_token_ms": 80.95990551181102,
+       "predicted_per_second": 12.35179307186954
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": []
+      },
+      "content_head": " The map leads to a hidden treasure. The keeper must decide whether to keep the treasure or return it to the sea.\n\nStory seed 1: Write a short story about a lighthouse keeper who finds a mysterious ma"
+     },
+     {
+      "rep": 1,
+      "wall_s": 10.841,
+      "prompt_n": 20,
+      "prompt_ms": 199.051,
+      "prompt_per_second": 100.4767622368137,
+      "predicted_n": 128,
+      "predicted_ms": 10632.275,
+      "predicted_per_second": 11.944762527304835,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 199.051,
+       "prompt_per_token_ms": 9.952549999999999,
+       "prompt_per_second": 100.4767622368137,
+       "predicted_n": 128,
+       "predicted_ms": 10632.275,
+       "predicted_per_token_ms": 83.71870078740157,
+       "predicted_per_second": 11.944762527304835
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": []
+      },
+      "content_head": " Story seed 2: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 3: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 4: Write a s"
+     },
+     {
+      "rep": 2,
+      "wall_s": 10.323,
+      "prompt_n": 20,
+      "prompt_ms": 198.997,
+      "prompt_per_second": 100.50402769891002,
+      "predicted_n": 128,
+      "predicted_ms": 10116.83,
+      "predicted_per_second": 12.553339336531305,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 198.997,
+       "prompt_per_token_ms": 9.949850000000001,
+       "prompt_per_second": 100.50402769891002,
+       "predicted_n": 128,
+       "predicted_ms": 10116.83,
+       "predicted_per_token_ms": 79.66007874015747,
+       "predicted_per_second": 12.553339336531305
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": []
+      },
+      "content_head": " The map leads to a hidden treasure, but the keeper must decide whether to keep it for himself or share it with the community.\n\nStory seed 3: Write a short story about a group of friends who discover "
+     }
+    ],
+    "32768": [
+     {
+      "rep": 0,
+      "wall_s": 110.791,
+      "prompt_n": 33621,
+      "prompt_ms": 97814.112,
+      "prompt_per_second": 343.72340874494677,
+      "predicted_n": 128,
+      "predicted_ms": 12834.596,
+      "predicted_per_second": 9.895130318087146,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 97814.112,
+       "prompt_per_token_ms": 2.9093159632372623,
+       "prompt_per_second": 343.72340874494677,
+       "predicted_n": 128,
+       "predicted_ms": 12834.596,
+       "predicted_per_token_ms": 101.05981102362205,
+       "predicted_per_second": 9.895130318087146
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": []
+      },
+      "content_head": " \nVariation 1: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: N"
+     },
+     {
+      "rep": 1,
+      "wall_s": 126.758,
+      "prompt_n": 33621,
+      "prompt_ms": 111676.29,
+      "prompt_per_second": 301.0576372119812,
+      "predicted_n": 128,
+      "predicted_ms": 14979.679,
+      "predicted_per_second": 8.478152302195527,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 111676.29,
+       "prompt_per_token_ms": 3.3216230927099133,
+       "prompt_per_second": 301.0576372119812,
+       "predicted_n": 128,
+       "predicted_ms": 14979.679,
+       "predicted_per_token_ms": 117.9502283464567,
+       "predicted_per_second": 8.478152302195527
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": []
+      },
+      "content_head": " \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 4: N"
+     },
+     {
+      "rep": 2,
+      "wall_s": 123.925,
+      "prompt_n": 33621,
+      "prompt_ms": 112900.826,
+      "prompt_per_second": 297.7923297035931,
+      "predicted_n": 128,
+      "predicted_ms": 10931.628,
+      "predicted_per_second": 11.617665731032925,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 112900.826,
+       "prompt_per_token_ms": 3.3580448529193063,
+       "prompt_per_second": 297.7923297035931,
+       "predicted_n": 128,
+       "predicted_ms": 10931.628,
+       "predicted_per_token_ms": 86.07581102362205,
+       "predicted_per_second": 11.617665731032925
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": []
+      },
+      "content_head": " The lighthouse keeper, named Eli, lived alone on a rocky island. One stormy night, a bottle washed ashore containing a yellowed map with strange symbols. Eli traced the map's coastline and discovered"
+     }
+    ]
+   }
+  },
+  {
+   "build": "hip",
+   "n_max": 2,
+   "method": "llama-server scratch port 5999, /completion, temp 0, cache_prompt false",
+   "kv": "f16",
+   "ubatch": 256,
+   "ctx_size": 40960,
+   "cells": {
+    "0": [
+     {
+      "rep": 0,
+      "wall_s": 4.798,
+      "prompt_n": 20,
+      "prompt_ms": 201.004,
+      "prompt_per_second": 99.50050745258801,
+      "predicted_n": 128,
+      "predicted_ms": 4590.78,
+      "predicted_per_second": 27.664144219500827,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 201.004,
+       "prompt_per_token_ms": 10.0502,
+       "prompt_per_second": 99.50050745258801,
+       "predicted_n": 128,
+       "predicted_ms": 4590.78,
+       "predicted_per_token_ms": 36.14787401574803,
+       "predicted_per_second": 27.664144219500827,
+       "draft_n": 89,
+       "draft_n_accepted": 82
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.29.422.359 I slot print_timing: id  0 | task 19 | draft acceptance = 0.92135 (   82 accepted /    89 generated), mean len =  2.82"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure. The keeper must decide whether to keep the treasure or return it to the sea.\n\nStory seed 1: Write a short story about a lighthouse keeper who finds a mysterious ma"
+     },
+     {
+      "rep": 1,
+      "wall_s": 4.734,
+      "prompt_n": 20,
+      "prompt_ms": 199.425,
+      "prompt_per_second": 100.28832894571893,
+      "predicted_n": 128,
+      "predicted_ms": 4523.185,
+      "predicted_per_second": 28.077560391626694,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 199.425,
+       "prompt_per_token_ms": 9.971250000000001,
+       "prompt_per_second": 100.28832894571893,
+       "predicted_n": 128,
+       "predicted_ms": 4523.185,
+       "predicted_per_token_ms": 35.615629921259846,
+       "predicted_per_second": 28.077560391626694,
+       "draft_n": 86,
+       "draft_n_accepted": 83
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.34.157.078 I slot print_timing: id  0 | task 67 | draft acceptance = 0.96512 (   83 accepted /    86 generated), mean len =  2.93"
+       ]
+      },
+      "content_head": " Story seed 2: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 3: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 4: Write a s"
+     },
+     {
+      "rep": 2,
+      "wall_s": 6.159,
+      "prompt_n": 20,
+      "prompt_ms": 206.228,
+      "prompt_per_second": 96.98004150745776,
+      "predicted_n": 128,
+      "predicted_ms": 5943.865,
+      "predicted_per_second": 21.366568722539963,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 206.228,
+       "prompt_per_token_ms": 10.3114,
+       "prompt_per_second": 96.98004150745776,
+       "predicted_n": 128,
+       "predicted_ms": 5943.865,
+       "predicted_per_token_ms": 46.80208661417323,
+       "predicted_per_second": 21.366568722539963,
+       "draft_n": 119,
+       "draft_n_accepted": 67
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.40.316.120 I slot print_timing: id  0 | task 114 | draft acceptance = 0.56303 (   67 accepted /   119 generated), mean len =  2.12"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure, but the keeper must decide whether to keep it for himself or share it with the community.\n\nStory seed 3: Write a short story about a group of friends who discover "
+     }
+    ],
+    "32768": [
+     {
+      "rep": 0,
+      "wall_s": 103.726,
+      "prompt_n": 33621,
+      "prompt_ms": 98627.673,
+      "prompt_per_second": 340.8880994282406,
+      "predicted_n": 128,
+      "predicted_ms": 4998.604,
+      "predicted_per_second": 25.407093660550025,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 98627.673,
+       "prompt_per_token_ms": 2.9335139644864814,
+       "prompt_per_second": 340.8880994282406,
+       "predicted_n": 128,
+       "predicted_ms": 4998.604,
+       "predicted_per_token_ms": 39.35908661417323,
+       "predicted_per_second": 25.407093660550025,
+       "draft_n": 85,
+       "draft_n_accepted": 84
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "2.24.041.197 I slot print_timing: id  0 | task 177 | draft acceptance = 0.98824 (   84 accepted /    85 generated), mean len =  2.95"
+       ]
+      },
+      "content_head": " \nVariation 1: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: N"
+     },
+     {
+      "rep": 1,
+      "wall_s": 111.354,
+      "prompt_n": 33621,
+      "prompt_ms": 106528.646,
+      "prompt_per_second": 315.6052504412757,
+      "predicted_n": 128,
+      "predicted_ms": 4713.363,
+      "predicted_per_second": 26.944667745726353,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 106528.646,
+       "prompt_per_token_ms": 3.1685150947324585,
+       "prompt_per_second": 315.6052504412757,
+       "predicted_n": 128,
+       "predicted_ms": 4713.363,
+       "predicted_per_token_ms": 37.11309448818898,
+       "predicted_per_second": 26.944667745726353,
+       "draft_n": 84,
+       "draft_n_accepted": 84
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "4.15.381.476 I slot print_timing: id  0 | task 240 | draft acceptance = 1.00000 (   84 accepted /    84 generated), mean len =  3.00"
+       ]
+      },
+      "content_head": " \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 4: N"
+     },
+     {
+      "rep": 2,
+      "wall_s": 116.716,
+      "prompt_n": 33621,
+      "prompt_ms": 108871.628,
+      "prompt_per_second": 308.81323828463377,
+      "predicted_n": 128,
+      "predicted_ms": 7748.22,
+      "predicted_per_second": 16.390861384937445,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 108871.628,
+       "prompt_per_token_ms": 3.238203146842747,
+       "prompt_per_second": 308.81323828463377,
+       "predicted_n": 128,
+       "predicted_ms": 7748.22,
+       "predicted_per_token_ms": 61.0096062992126,
+       "predicted_per_second": 16.390861384937445,
+       "draft_n": 141,
+       "draft_n_accepted": 56
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "6.12.114.618 I slot print_timing: id  0 | task 303 | draft acceptance = 0.39716 (   56 accepted /   141 generated), mean len =  1.79"
+       ]
+      },
+      "content_head": " The lighthouse keeper, named Eli, lived alone on a rocky island. One stormy night, a bottle washed ashore containing a yellowed map with strange symbols. Eli traced the map's coastline and realized i"
+     }
+    ]
+   }
+  },
+  {
+   "build": "hip",
+   "n_max": 3,
+   "method": "llama-server scratch port 5999, /completion, temp 0, cache_prompt false",
+   "kv": "f16",
+   "ubatch": 256,
+   "ctx_size": 40960,
+   "cells": {
+    "0": [
+     {
+      "rep": 0,
+      "wall_s": 3.835,
+      "prompt_n": 20,
+      "prompt_ms": 208.084,
+      "prompt_per_second": 96.11503046846465,
+      "predicted_n": 128,
+      "predicted_ms": 3620.121,
+      "predicted_per_second": 35.08170030780739,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 208.084,
+       "prompt_per_token_ms": 10.4042,
+       "prompt_per_second": 96.11503046846465,
+       "predicted_n": 128,
+       "predicted_ms": 3620.121,
+       "predicted_per_token_ms": 28.504889763779527,
+       "predicted_per_second": 35.08170030780739,
+       "draft_n": 107,
+       "draft_n_accepted": 91
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.26.995.374 I slot print_timing: id  0 | task 18 | draft acceptance = 0.85047 (   91 accepted /   107 generated), mean len =  3.53"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure. The keeper must decide whether to keep the treasure or return it to the sea.\n\nStory seed 1: Write a short story about a lighthouse keeper who finds a mysterious ma"
+     },
+     {
+      "rep": 1,
+      "wall_s": 4.096,
+      "prompt_n": 20,
+      "prompt_ms": 201.807,
+      "prompt_per_second": 99.1045900290872,
+      "predicted_n": 128,
+      "predicted_ms": 3884.447,
+      "predicted_per_second": 32.69448649962273,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 201.807,
+       "prompt_per_token_ms": 10.090349999999999,
+       "prompt_per_second": 99.1045900290872,
+       "predicted_n": 128,
+       "predicted_ms": 3884.447,
+       "predicted_per_token_ms": 30.5861968503937,
+       "predicted_per_second": 32.69448649962273,
+       "draft_n": 102,
+       "draft_n_accepted": 92
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.31.093.871 I slot print_timing: id  0 | task 57 | draft acceptance = 0.90196 (   92 accepted /   102 generated), mean len =  3.71"
+       ]
+      },
+      "content_head": " Story seed 2: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 3: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 4: Write a s"
+     },
+     {
+      "rep": 2,
+      "wall_s": 6.22,
+      "prompt_n": 20,
+      "prompt_ms": 203.571,
+      "prompt_per_second": 98.24582086839482,
+      "predicted_n": 128,
+      "predicted_ms": 6006.64,
+      "predicted_per_second": 21.14326811661761,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 203.571,
+       "prompt_per_token_ms": 10.17855,
+       "prompt_per_second": 98.24582086839482,
+       "predicted_n": 128,
+       "predicted_ms": 6006.64,
+       "predicted_per_token_ms": 47.29637795275591,
+       "predicted_per_second": 21.14326811661761,
+       "draft_n": 160,
+       "draft_n_accepted": 73
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.37.314.478 I slot print_timing: id  0 | task 95 | draft acceptance = 0.45625 (   73 accepted /   160 generated), mean len =  2.35"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure, but the keeper must decide whether to keep it for himself or share it with the community.\n\nStory seed 3: Write a short story about a group of friends who discover "
+     }
+    ],
+    "32768": [
+     {
+      "rep": 0,
+      "wall_s": 120.429,
+      "prompt_n": 33621,
+      "prompt_ms": 115686.422,
+      "prompt_per_second": 290.62183287162253,
+      "predicted_n": 128,
+      "predicted_ms": 4617.935,
+      "predicted_per_second": 27.50146981280594,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 115686.422,
+       "prompt_per_token_ms": 3.440897712739062,
+       "prompt_per_second": 290.62183287162253,
+       "predicted_n": 128,
+       "predicted_ms": 4617.935,
+       "predicted_per_token_ms": 36.36169291338583,
+       "predicted_per_second": 27.50146981280594,
+       "draft_n": 99,
+       "draft_n_accepted": 94
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "2.37.741.915 I slot print_timing: id  0 | task 152 | draft acceptance = 0.94949 (   94 accepted /    99 generated), mean len =  3.85"
+       ]
+      },
+      "content_head": " \nVariation 1: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: N"
+     },
+     {
+      "rep": 1,
+      "wall_s": 117.611,
+      "prompt_n": 33621,
+      "prompt_ms": 108635.974,
+      "prompt_per_second": 309.4831183637199,
+      "predicted_n": 128,
+      "predicted_ms": 8852.111,
+      "predicted_per_second": 14.34686031388445,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 108635.974,
+       "prompt_per_token_ms": 3.231194015644984,
+       "prompt_per_second": 309.4831183637199,
+       "predicted_n": 128,
+       "predicted_ms": 8852.111,
+       "predicted_per_token_ms": 69.70166141732284,
+       "predicted_per_second": 14.34686031388445,
+       "draft_n": 100,
+       "draft_n_accepted": 93
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "4.35.355.938 I slot print_timing: id  0 | task 205 | draft acceptance = 0.93000 (   93 accepted /   100 generated), mean len =  3.74"
+       ]
+      },
+      "content_head": " \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 4: N"
+     },
+     {
+      "rep": 2,
+      "wall_s": 112.712,
+      "prompt_n": 33621,
+      "prompt_ms": 104137.727,
+      "prompt_per_second": 322.85129480500376,
+      "predicted_n": 128,
+      "predicted_ms": 8460.232,
+      "predicted_per_second": 15.011408670589647,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 104137.727,
+       "prompt_per_token_ms": 3.097401237321912,
+       "prompt_per_second": 322.85129480500376,
+       "predicted_n": 128,
+       "predicted_ms": 8460.232,
+       "predicted_per_token_ms": 66.616,
+       "predicted_per_second": 15.011408670589647,
+       "draft_n": 212,
+       "draft_n_accepted": 56
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "6.28.068.457 I slot print_timing: id  0 | task 259 | draft acceptance = 0.26415 (   56 accepted /   212 generated), mean len =  1.79"
+       ]
+      },
+      "content_head": " The lighthouse keeper, named Eli, lived alone on a rocky island. One stormy night, a bottle washed ashore containing a yellowed map with strange symbols. Eli traced the map's coastline and realized i"
+     }
+    ]
+   }
+  },
+  {
+   "build": "hip",
+   "n_max": 4,
+   "method": "llama-server scratch port 5999, /completion, temp 0, cache_prompt false",
+   "kv": "f16",
+   "ubatch": 256,
+   "ctx_size": 40960,
+   "cells": {
+    "0": [
+     {
+      "rep": 0,
+      "wall_s": 11.242,
+      "prompt_n": 20,
+      "prompt_ms": 951.219,
+      "prompt_per_second": 21.025652347146135,
+      "predicted_n": 128,
+      "predicted_ms": 10283.005,
+      "predicted_per_second": 12.350475371742016,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 951.219,
+       "prompt_per_token_ms": 47.560950000000005,
+       "prompt_per_second": 21.025652347146135,
+       "predicted_n": 128,
+       "predicted_ms": 10283.005,
+       "predicted_per_token_ms": 80.9685433070866,
+       "predicted_per_second": 12.350475371742016,
+       "draft_n": 124,
+       "draft_n_accepted": 95
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.32.923.160 I slot print_timing: id  0 | task 17 | draft acceptance = 0.76613 (   95 accepted /   124 generated), mean len =  4.06"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure. The keeper must decide whether to keep the treasure or return it to the sea.\n\nStory seed 1: Write a short story about a lighthouse keeper who finds a mysterious ma"
+     },
+     {
+      "rep": 1,
+      "wall_s": 4.646,
+      "prompt_n": 20,
+      "prompt_ms": 197.343,
+      "prompt_per_second": 101.34638674794647,
+      "predicted_n": 128,
+      "predicted_ms": 4430.761,
+      "predicted_per_second": 28.663247690408035,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 197.343,
+       "prompt_per_token_ms": 9.867149999999999,
+       "prompt_per_second": 101.34638674794647,
+       "predicted_n": 128,
+       "predicted_ms": 4430.761,
+       "predicted_per_token_ms": 34.88788188976378,
+       "predicted_per_second": 28.663247690408035,
+       "draft_n": 124,
+       "draft_n_accepted": 95
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.37.559.322 I slot print_timing: id  0 | task 52 | draft acceptance = 0.76613 (   95 accepted /   124 generated), mean len =  4.06"
+       ]
+      },
+      "content_head": " Story seed 2: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 3: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 4: Write a s"
+     },
+     {
+      "rep": 2,
+      "wall_s": 7.176,
+      "prompt_n": 20,
+      "prompt_ms": 232.513,
+      "prompt_per_second": 86.01669584066266,
+      "predicted_n": 128,
+      "predicted_ms": 6931.798,
+      "predicted_per_second": 18.321364817612977,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 232.513,
+       "prompt_per_token_ms": 11.62565,
+       "prompt_per_second": 86.01669584066266,
+       "predicted_n": 128,
+       "predicted_ms": 6931.798,
+       "predicted_per_token_ms": 54.58108661417322,
+       "predicted_per_second": 18.321364817612977,
+       "draft_n": 190,
+       "draft_n_accepted": 79
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.44.745.253 I slot print_timing: id  0 | task 87 | draft acceptance = 0.41579 (   79 accepted /   190 generated), mean len =  2.65"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure, but the keeper must decide whether to keep it for himself or share it with the community.\n\nStory seed 3: Write a short story about a group of friends who discover "
+     }
+    ],
+    "32768": [
+     {
+      "rep": 0,
+      "wall_s": 109.684,
+      "prompt_n": 33621,
+      "prompt_ms": 105164.015,
+      "prompt_per_second": 319.70061241956193,
+      "predicted_n": 128,
+      "predicted_ms": 4387.35,
+      "predicted_per_second": 28.946858582059782,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 105164.015,
+       "prompt_per_token_ms": 3.127926444781535,
+       "prompt_per_second": 319.70061241956193,
+       "predicted_n": 128,
+       "predicted_ms": 4387.35,
+       "predicted_per_token_ms": 34.54606299212599,
+       "predicted_per_second": 28.946858582059782,
+       "draft_n": 113,
+       "draft_n_accepted": 98
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "2.34.428.721 I slot print_timing: id  0 | task 138 | draft acceptance = 0.86726 (   98 accepted /   113 generated), mean len =  4.38"
+       ]
+      },
+      "content_head": " \nVariation 1: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: N"
+     },
+     {
+      "rep": 1,
+      "wall_s": 122.429,
+      "prompt_n": 33621,
+      "prompt_ms": 116654.937,
+      "prompt_per_second": 288.20897653050037,
+      "predicted_n": 128,
+      "predicted_ms": 5675.786,
+      "predicted_per_second": 22.37575553412338,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 116654.937,
+       "prompt_per_token_ms": 3.4697045596502187,
+       "prompt_per_second": 288.20897653050037,
+       "predicted_n": 128,
+       "predicted_ms": 5675.786,
+       "predicted_per_token_ms": 44.6912283464567,
+       "predicted_per_second": 22.37575553412338,
+       "draft_n": 113,
+       "draft_n_accepted": 98
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "4.36.869.432 I slot print_timing: id  0 | task 187 | draft acceptance = 0.86726 (   98 accepted /   113 generated), mean len =  4.38"
+       ]
+      },
+      "content_head": " \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 4: N"
+     },
+     {
+      "rep": 2,
+      "wall_s": 112.002,
+      "prompt_n": 33621,
+      "prompt_ms": 102960.534,
+      "prompt_per_second": 326.54259543758775,
+      "predicted_n": 128,
+      "predicted_ms": 8943.359,
+      "predicted_per_second": 14.200481049681667,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 102960.534,
+       "prompt_per_token_ms": 3.062387614883555,
+       "prompt_per_second": 326.54259543758775,
+       "predicted_n": 128,
+       "predicted_ms": 8943.359,
+       "predicted_per_token_ms": 70.42014960629922,
+       "predicted_per_second": 14.200481049681667,
+       "draft_n": 257,
+       "draft_n_accepted": 62
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "6.28.872.366 I slot print_timing: id  0 | task 236 | draft acceptance = 0.24125 (   62 accepted /   257 generated), mean len =  1.95"
+       ]
+      },
+      "content_head": " The lighthouse keeper, named Eli, lived alone on a rocky island. One stormy night, a bottle washed ashore containing a yellowed map with strange symbols. Eli traced the map's coastline and realized i"
+     }
+    ]
+   }
+  },
+  {
+   "build": "hip",
+   "n_max": 6,
+   "method": "llama-server scratch port 5999, /completion, temp 0, cache_prompt false",
+   "kv": "f16",
+   "ubatch": 256,
+   "ctx_size": 40960,
+   "cells": {
+    "0": [
+     {
+      "rep": 0,
+      "wall_s": 4.231,
+      "prompt_n": 20,
+      "prompt_ms": 209.856,
+      "prompt_per_second": 95.3034461726136,
+      "predicted_n": 128,
+      "predicted_ms": 4015.456,
+      "predicted_per_second": 31.627790218595347,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 209.856,
+       "prompt_per_token_ms": 10.492799999999999,
+       "prompt_per_second": 95.3034461726136,
+       "predicted_n": 128,
+       "predicted_ms": 4015.456,
+       "predicted_per_token_ms": 31.61776377952756,
+       "predicted_per_second": 31.627790218595347,
+       "draft_n": 152,
+       "draft_n_accepted": 101
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.23.335.040 I slot print_timing: id  0 | task 14 | draft acceptance = 0.66447 (  101 accepted /   152 generated), mean len =  4.88"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure. The keeper must decide whether to keep the treasure or return it to the sea.\n\nStory seed 1: Write a short story about a lighthouse keeper who finds a mysterious ma"
+     },
+     {
+      "rep": 1,
+      "wall_s": 4.967,
+      "prompt_n": 20,
+      "prompt_ms": 216.635,
+      "prompt_per_second": 92.32118540402058,
+      "predicted_n": 128,
+      "predicted_ms": 4741.41,
+      "predicted_per_second": 26.7852811716346,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 216.635,
+       "prompt_per_token_ms": 10.83175,
+       "prompt_per_second": 92.32118540402058,
+       "predicted_n": 128,
+       "predicted_ms": 4741.41,
+       "predicted_per_token_ms": 37.33393700787401,
+       "predicted_per_second": 26.7852811716346,
+       "draft_n": 161,
+       "draft_n_accepted": 99
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.28.302.658 I slot print_timing: id  0 | task 43 | draft acceptance = 0.61491 (   99 accepted /   161 generated), mean len =  4.67"
+       ]
+      },
+      "content_head": " Story seed 2: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 3: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 4: Write a s"
+     },
+     {
+      "rep": 2,
+      "wall_s": 7.753,
+      "prompt_n": 20,
+      "prompt_ms": 217.282,
+      "prompt_per_second": 92.04628087002143,
+      "predicted_n": 128,
+      "predicted_ms": 7525.746,
+      "predicted_per_second": 16.87540344837575,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 217.282,
+       "prompt_per_token_ms": 10.8641,
+       "prompt_per_second": 92.04628087002143,
+       "predicted_n": 128,
+       "predicted_ms": 7525.746,
+       "predicted_per_token_ms": 59.25784251968504,
+       "predicted_per_second": 16.87540344837575,
+       "draft_n": 266,
+       "draft_n_accepted": 82
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.36.056.522 I slot print_timing: id  0 | task 74 | draft acceptance = 0.30827 (   82 accepted /   266 generated), mean len =  2.82"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure, but the keeper must decide whether to keep it for himself or share it with the community.\n\nStory seed 3: Write a short story about a group of friends who discover "
+     }
+    ],
+    "32768": [
+     {
+      "rep": 0,
+      "wall_s": 107.671,
+      "prompt_n": 33621,
+      "prompt_ms": 103138.97,
+      "prompt_per_second": 325.97765907493545,
+      "predicted_n": 128,
+      "predicted_ms": 4276.378,
+      "predicted_per_second": 29.69802950066622,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 103138.97,
+       "prompt_per_token_ms": 3.067694893072782,
+       "prompt_per_second": 325.97765907493545,
+       "predicted_n": 128,
+       "predicted_ms": 4276.378,
+       "predicted_per_token_ms": 33.67226771653543,
+       "predicted_per_second": 29.69802950066622,
+       "draft_n": 131,
+       "draft_n_accepted": 105
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "2.23.725.287 I slot print_timing: id  0 | task 122 | draft acceptance = 0.80153 (  105 accepted /   131 generated), mean len =  5.77"
+       ]
+      },
+      "content_head": " \nVariation 1: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: N"
+     },
+     {
+      "rep": 1,
+      "wall_s": 111.37,
+      "prompt_n": 33621,
+      "prompt_ms": 106597.666,
+      "prompt_per_second": 315.40090192969143,
+      "predicted_n": 128,
+      "predicted_ms": 4670.327,
+      "predicted_per_second": 27.19295672444349,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 106597.666,
+       "prompt_per_token_ms": 3.1705679783468663,
+       "prompt_per_second": 315.40090192969143,
+       "predicted_n": 128,
+       "predicted_ms": 4670.327,
+       "predicted_per_token_ms": 36.774228346456695,
+       "predicted_per_second": 27.19295672444349,
+       "draft_n": 131,
+       "draft_n_accepted": 105
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "4.15.097.248 I slot print_timing: id  0 | task 164 | draft acceptance = 0.80153 (  105 accepted /   131 generated), mean len =  5.77"
+       ]
+      },
+      "content_head": " \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 4: N"
+     },
+     {
+      "rep": 2,
+      "wall_s": 112.919,
+      "prompt_n": 33621,
+      "prompt_ms": 100780.351,
+      "prompt_per_second": 333.606696805412,
+      "predicted_n": 128,
+      "predicted_ms": 12030.188,
+      "predicted_per_second": 10.556776003833024,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 100780.351,
+       "prompt_per_token_ms": 2.9975417447428687,
+       "prompt_per_second": 333.606696805412,
+       "predicted_n": 128,
+       "predicted_ms": 12030.188,
+       "predicted_per_token_ms": 94.72588976377953,
+       "predicted_per_second": 10.556776003833024,
+       "draft_n": 358,
+       "draft_n_accepted": 66
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "6.08.017.340 I slot print_timing: id  0 | task 206 | draft acceptance = 0.18436 (   66 accepted /   358 generated), mean len =  2.10"
+       ]
+      },
+      "content_head": " The lighthouse keeper, named Eli, lived alone on a rocky island. One stormy night, a bottle washed ashore containing a yellowed map with strange symbols. Eli traced the map's coastline and realized i"
+     }
+    ]
+   }
+  },
+  {
+   "build": "hip",
+   "n_max": 8,
+   "method": "llama-server scratch port 5999, /completion, temp 0, cache_prompt false",
+   "kv": "f16",
+   "ubatch": 256,
+   "ctx_size": 40960,
+   "cells": {
+    "0": [
+     {
+      "rep": 0,
+      "wall_s": 3.578,
+      "prompt_n": 20,
+      "prompt_ms": 247.689,
+      "prompt_per_second": 80.74641990560744,
+      "predicted_n": 128,
+      "predicted_ms": 3325.41,
+      "predicted_per_second": 38.19077948283069,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 247.689,
+       "prompt_per_token_ms": 12.38445,
+       "prompt_per_second": 80.74641990560744,
+       "predicted_n": 128,
+       "predicted_ms": 3325.41,
+       "predicted_per_token_ms": 26.184330708661417,
+       "predicted_per_second": 38.19077948283069,
+       "draft_n": 184,
+       "draft_n_accepted": 103
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.23.017.441 I slot print_timing: id  0 | task 17 | draft acceptance = 0.55978 (  103 accepted /   184 generated), mean len =  5.48"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure. The keeper must decide whether to keep the treasure or return it to the sea.\n\nStory seed 1: Write a short story about a lighthouse keeper who finds a mysterious ma"
+     },
+     {
+      "rep": 1,
+      "wall_s": 3.733,
+      "prompt_n": 20,
+      "prompt_ms": 205.557,
+      "prompt_per_second": 97.29661359136395,
+      "predicted_n": 128,
+      "predicted_ms": 3519.493,
+      "predicted_per_second": 36.08474288768297,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 205.557,
+       "prompt_per_token_ms": 10.277849999999999,
+       "prompt_per_second": 97.29661359136395,
+       "predicted_n": 128,
+       "predicted_ms": 3519.493,
+       "predicted_per_token_ms": 27.712543307086612,
+       "predicted_per_second": 36.08474288768297,
+       "draft_n": 204,
+       "draft_n_accepted": 101
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.26.750.309 I slot print_timing: id  0 | task 44 | draft acceptance = 0.49510 (  101 accepted /   204 generated), mean len =  4.88"
+       ]
+      },
+      "content_head": " Story seed 2: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 3: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 4: Write a s"
+     },
+     {
+      "rep": 2,
+      "wall_s": 6.126,
+      "prompt_n": 20,
+      "prompt_ms": 212.922,
+      "prompt_per_second": 93.93111092324888,
+      "predicted_n": 128,
+      "predicted_ms": 5902.039,
+      "predicted_per_second": 21.51798725830175,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 212.922,
+       "prompt_per_token_ms": 10.6461,
+       "prompt_per_second": 93.93111092324888,
+       "predicted_n": 128,
+       "predicted_ms": 5902.039,
+       "predicted_per_token_ms": 46.47274803149606,
+       "predicted_per_second": 21.51798725830175,
+       "draft_n": 337,
+       "draft_n_accepted": 84
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.32.876.915 I slot print_timing: id  0 | task 73 | draft acceptance = 0.24926 (   84 accepted /   337 generated), mean len =  2.95"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure, but the journey is filled with challenges and moral dilemmas.\n\nStory seed 3: Write a short story about a group of friends who discover a magical forest. The forest"
+     }
+    ],
+    "32768": [
+     {
+      "rep": 0,
+      "wall_s": 118.241,
+      "prompt_n": 33621,
+      "prompt_ms": 114112.917,
+      "prompt_per_second": 294.6292223868048,
+      "predicted_n": 128,
+      "predicted_ms": 4025.448,
+      "predicted_per_second": 31.549283458636157,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 114112.917,
+       "prompt_per_token_ms": 3.3940964575711607,
+       "prompt_per_second": 294.6292223868048,
+       "predicted_n": 128,
+       "predicted_ms": 4025.448,
+       "predicted_per_token_ms": 31.69644094488189,
+       "predicted_per_second": 31.549283458636157,
+       "draft_n": 131,
+       "draft_n_accepted": 110
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "2.31.116.370 I slot print_timing: id  0 | task 119 | draft acceptance = 0.83969 (  110 accepted /   131 generated), mean len =  7.47"
+       ]
+      },
+      "content_head": " \nVariation 1: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: N"
+     },
+     {
+      "rep": 1,
+      "wall_s": 120.105,
+      "prompt_n": 33621,
+      "prompt_ms": 117282.824,
+      "prompt_per_second": 286.6660168414772,
+      "predicted_n": 128,
+      "predicted_ms": 2728.423,
+      "predicted_per_second": 46.54703467900689,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 117282.824,
+       "prompt_per_token_ms": 3.488380000594866,
+       "prompt_per_second": 286.6660168414772,
+       "predicted_n": 128,
+       "predicted_ms": 2728.423,
+       "predicted_per_token_ms": 21.483645669291338,
+       "predicted_per_second": 46.54703467900689,
+       "draft_n": 136,
+       "draft_n_accepted": 109
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "4.31.227.396 I slot print_timing: id  0 | task 156 | draft acceptance = 0.80147 (  109 accepted /   136 generated), mean len =  7.41"
+       ]
+      },
+      "content_head": " \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 4: N"
+     },
+     {
+      "rep": 2,
+      "wall_s": 108.997,
+      "prompt_n": 33621,
+      "prompt_ms": 99846.959,
+      "prompt_per_second": 336.72532780893204,
+      "predicted_n": 128,
+      "predicted_ms": 9047.624,
+      "predicted_per_second": 14.036834421943263,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 99846.959,
+       "prompt_per_token_ms": 2.9697795722911278,
+       "prompt_per_second": 336.72532780893204,
+       "predicted_n": 128,
+       "predicted_ms": 9047.624,
+       "predicted_per_token_ms": 71.24113385826772,
+       "predicted_per_second": 14.036834421943263,
+       "draft_n": 468,
+       "draft_n_accepted": 67
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "6.20.224.885 I slot print_timing: id  0 | task 194 | draft acceptance = 0.14316 (   67 accepted /   468 generated), mean len =  2.14"
+       ]
+      },
+      "content_head": " The lighthouse keeper, named Eli, lived alone on a rocky island. One stormy night, a bottle washed ashore containing a yellowed map with strange symbols. Eli traced the map's coastline and realized i"
+     }
+    ]
+   }
+  },
+  {
+   "build": "hip",
+   "n_max": 15,
+   "method": "llama-server scratch port 5999, /completion, temp 0, cache_prompt false",
+   "kv": "f16",
+   "ubatch": 256,
+   "ctx_size": 40960,
+   "cells": {
+    "0": [
+     {
+      "rep": 0,
+      "wall_s": 2.758,
+      "prompt_n": 20,
+      "prompt_ms": 238.344,
+      "prompt_per_second": 83.91232839928844,
+      "predicted_n": 128,
+      "predicted_ms": 2514.823,
+      "predicted_per_second": 50.50057200844752,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 238.344,
+       "prompt_per_token_ms": 11.9172,
+       "prompt_per_second": 83.91232839928844,
+       "predicted_n": 128,
+       "predicted_ms": 2514.823,
+       "predicted_per_token_ms": 19.80175590551181,
+       "predicted_per_second": 50.50057200844752,
+       "draft_n": 284,
+       "draft_n_accepted": 108
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.19.609.742 I slot print_timing: id  0 | task 14 | draft acceptance = 0.38028 (  108 accepted /   284 generated), mean len =  6.68"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure. The keeper must decide whether to keep the treasure or return it to the sea.\n\nStory seed 1: Write a short story about a lighthouse keeper who finds a mysterious ma"
+     },
+     {
+      "rep": 1,
+      "wall_s": 3.209,
+      "prompt_n": 20,
+      "prompt_ms": 377.627,
+      "prompt_per_second": 52.962314665000115,
+      "predicted_n": 128,
+      "predicted_ms": 2823.739,
+      "predicted_per_second": 44.97582814842307,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 377.627,
+       "prompt_per_token_ms": 18.88135,
+       "prompt_per_second": 52.962314665000115,
+       "predicted_n": 128,
+       "predicted_ms": 2823.739,
+       "predicted_per_token_ms": 22.23416535433071,
+       "predicted_per_second": 44.97582814842307,
+       "draft_n": 278,
+       "draft_n_accepted": 108
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.22.818.573 I slot print_timing: id  0 | task 36 | draft acceptance = 0.38849 (  108 accepted /   278 generated), mean len =  6.68"
+       ]
+      },
+      "content_head": " Story seed 2: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 3: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 4: Write a s"
+     },
+     {
+      "rep": 2,
+      "wall_s": 6.176,
+      "prompt_n": 20,
+      "prompt_ms": 372.457,
+      "prompt_per_second": 53.697473802344966,
+      "predicted_n": 128,
+      "predicted_ms": 5794.308,
+      "predicted_per_second": 21.918061656370355,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 372.457,
+       "prompt_per_token_ms": 18.62285,
+       "prompt_per_second": 53.697473802344966,
+       "predicted_n": 128,
+       "predicted_ms": 5794.308,
+       "predicted_per_token_ms": 45.624472440944885,
+       "predicted_per_second": 21.918061656370355,
+       "draft_n": 561,
+       "draft_n_accepted": 87
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.28.994.781 I slot print_timing: id  0 | task 58 | draft acceptance = 0.15508 (   87 accepted /   561 generated), mean len =  3.17"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure, but the journey is filled with challenges and moral dilemmas.\n\nStory seed 3: Write a short story about a group of friends who discover a magical forest. The forest"
+     }
+    ],
+    "32768": [
+     {
+      "rep": 0,
+      "wall_s": 102.209,
+      "prompt_n": 33621,
+      "prompt_ms": 100624.976,
+      "prompt_per_second": 334.12181882160155,
+      "predicted_n": 128,
+      "predicted_ms": 1427.459,
+      "predicted_per_second": 88.96928037863084,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 100624.976,
+       "prompt_per_token_ms": 2.9929203771452366,
+       "prompt_per_second": 334.12181882160155,
+       "predicted_n": 128,
+       "predicted_ms": 1427.459,
+       "predicted_per_token_ms": 11.239834645669292,
+       "predicted_per_second": 88.96928037863084,
+       "draft_n": 128,
+       "draft_n_accepted": 118
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "2.11.202.413 I slot print_timing: id  0 | task 101 | draft acceptance = 0.92188 (  118 accepted /   128 generated), mean len = 14.11"
+       ]
+      },
+      "content_head": " \nVariation 1: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: N"
+     },
+     {
+      "rep": 1,
+      "wall_s": 126.45,
+      "prompt_n": 33621,
+      "prompt_ms": 124934.478,
+      "prompt_per_second": 269.1090605109024,
+      "predicted_n": 128,
+      "predicted_ms": 1415.202,
+      "predicted_per_second": 89.73983925969578,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 124934.478,
+       "prompt_per_token_ms": 3.71596555724101,
+       "prompt_per_second": 269.1090605109024,
+       "predicted_n": 128,
+       "predicted_ms": 1415.202,
+       "predicted_per_token_ms": 11.14332283464567,
+       "predicted_per_second": 89.73983925969578,
+       "draft_n": 133,
+       "draft_n_accepted": 118
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "4.17.652.537 I slot print_timing: id  0 | task 130 | draft acceptance = 0.88722 (  118 accepted /   133 generated), mean len = 14.11"
+       ]
+      },
+      "content_head": " \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 4: N"
+     },
+     {
+      "rep": 2,
+      "wall_s": 112.0,
+      "prompt_n": 33621,
+      "prompt_ms": 103611.057,
+      "prompt_per_second": 324.492394667878,
+      "predicted_n": 128,
+      "predicted_ms": 8276.705,
+      "predicted_per_second": 15.344270455452985,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 103611.057,
+       "prompt_per_token_ms": 3.0817363255108416,
+       "prompt_per_second": 324.492394667878,
+       "predicted_n": 128,
+       "predicted_ms": 8276.705,
+       "predicted_per_token_ms": 65.17090551181103,
+       "predicted_per_second": 15.344270455452985,
+       "draft_n": 727,
+       "draft_n_accepted": 78
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "6.09.654.167 I slot print_timing: id  0 | task 159 | draft acceptance = 0.10729 (   78 accepted /   727 generated), mean len =  2.59"
+       ]
+      },
+      "content_head": " The lighthouse keeper, named Eli, lived alone on a rocky island. One stormy night, a bottle washed ashore containing a yellowed map with strange symbols. Eli traced the map's coastline and discovered"
+     }
+    ]
+   }
+  },
+  {
+   "build": "vulkan",
+   "n_max": null,
+   "method": "llama-server scratch port 5999, /completion, temp 0, cache_prompt false",
+   "kv": "f16",
+   "ubatch": 256,
+   "ctx_size": 40960,
+   "cells": {
+    "0": [
+     {
+      "rep": 0,
+      "wall_s": 9.934,
+      "prompt_n": 20,
+      "prompt_ms": 265.635,
+      "prompt_per_second": 75.29128315169311,
+      "predicted_n": 128,
+      "predicted_ms": 9660.399,
+      "predicted_per_second": 13.146454923859771,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 265.635,
+       "prompt_per_token_ms": 13.281749999999999,
+       "prompt_per_second": 75.29128315169311,
+       "predicted_n": 128,
+       "predicted_ms": 9660.399,
+       "predicted_per_token_ms": 76.06613385826772,
+       "predicted_per_second": 13.146454923859771
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": []
+      },
+      "content_head": " The map leads to a hidden treasure. The keeper must decide whether to keep the treasure or return it to the sea.\n\nStory seed 1: Write a short story about a lighthouse keeper who finds a mysterious ma"
+     },
+     {
+      "rep": 1,
+      "wall_s": 9.82,
+      "prompt_n": 20,
+      "prompt_ms": 278.922,
+      "prompt_per_second": 71.7046342705129,
+      "predicted_n": 128,
+      "predicted_ms": 9527.243,
+      "predicted_per_second": 13.330194265014548,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 278.922,
+       "prompt_per_token_ms": 13.946100000000001,
+       "prompt_per_second": 71.7046342705129,
+       "predicted_n": 128,
+       "predicted_ms": 9527.243,
+       "predicted_per_token_ms": 75.01766141732284,
+       "predicted_per_second": 13.330194265014548
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": []
+      },
+      "content_head": " Story seed 2: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 3: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 4: Write a s"
+     },
+     {
+      "rep": 2,
+      "wall_s": 9.823,
+      "prompt_n": 20,
+      "prompt_ms": 277.258,
+      "prompt_per_second": 72.13497897265364,
+      "predicted_n": 128,
+      "predicted_ms": 9531.773,
+      "predicted_per_second": 13.323859055392948,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 277.258,
+       "prompt_per_token_ms": 13.8629,
+       "prompt_per_second": 72.13497897265364,
+       "predicted_n": 128,
+       "predicted_ms": 9531.773,
+       "predicted_per_token_ms": 75.0533307086614,
+       "predicted_per_second": 13.323859055392948
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": []
+      },
+      "content_head": " The map leads to a hidden treasure, but the keeper must decide whether to keep it for himself or share it with the community.\n\nStory seed 3: Write a short story about a group of friends who discover "
+     }
+    ],
+    "32768": [
+     {
+      "rep": 0,
+      "wall_s": 129.307,
+      "prompt_n": 33621,
+      "prompt_ms": 117263.184,
+      "prompt_per_second": 286.7140295286542,
+      "predicted_n": 128,
+      "predicted_ms": 11932.621,
+      "predicted_per_second": 10.643093415939383,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 117263.184,
+       "prompt_per_token_ms": 3.487795841884536,
+       "prompt_per_second": 286.7140295286542,
+       "predicted_n": 128,
+       "predicted_ms": 11932.621,
+       "predicted_per_token_ms": 93.95764566929134,
+       "predicted_per_second": 10.643093415939383
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": []
+      },
+      "content_head": " \nVariation 1: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: N"
+     },
+     {
+      "rep": 1,
+      "wall_s": 132.369,
+      "prompt_n": 33621,
+      "prompt_ms": 118293.037,
+      "prompt_per_second": 284.2179121667153,
+      "predicted_n": 128,
+      "predicted_ms": 13705.988,
+      "predicted_per_second": 9.26602299666394,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 118293.037,
+       "prompt_per_token_ms": 3.518427084262812,
+       "prompt_per_second": 284.2179121667153,
+       "predicted_n": 128,
+       "predicted_ms": 13705.988,
+       "predicted_per_token_ms": 107.92116535433071,
+       "predicted_per_second": 9.26602299666394
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": []
+      },
+      "content_head": " \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 4: N"
+     },
+     {
+      "rep": 2,
+      "wall_s": 128.221,
+      "prompt_n": 33621,
+      "prompt_ms": 117192.242,
+      "prompt_per_second": 286.88759107450136,
+      "predicted_n": 128,
+      "predicted_ms": 10892.533,
+      "predicted_per_second": 11.65936334551385,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 117192.242,
+       "prompt_per_token_ms": 3.4856857916183337,
+       "prompt_per_second": 286.88759107450136,
+       "predicted_n": 128,
+       "predicted_ms": 10892.533,
+       "predicted_per_token_ms": 85.76797637795275,
+       "predicted_per_second": 11.65936334551385
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": []
+      },
+      "content_head": " The lighthouse keeper, named Eli, lived alone on a rocky island. One stormy night, a bottle washed ashore containing a yellowed map. The map showed a hidden cove with an X marking a spot. Eli decided"
+     }
+    ]
+   }
+  },
+  {
+   "build": "vulkan",
+   "n_max": 2,
+   "method": "llama-server scratch port 5999, /completion, temp 0, cache_prompt false",
+   "kv": "f16",
+   "ubatch": 256,
+   "ctx_size": 40960,
+   "cells": {
+    "0": [
+     {
+      "rep": 0,
+      "wall_s": 4.542,
+      "prompt_n": 20,
+      "prompt_ms": 270.485,
+      "prompt_per_second": 73.94125367395604,
+      "predicted_n": 128,
+      "predicted_ms": 4263.345,
+      "predicted_per_second": 29.78881605875199,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 270.485,
+       "prompt_per_token_ms": 13.52425,
+       "prompt_per_second": 73.94125367395604,
+       "predicted_n": 128,
+       "predicted_ms": 4263.345,
+       "predicted_per_token_ms": 33.56964566929134,
+       "predicted_per_second": 29.78881605875199,
+       "draft_n": 89,
+       "draft_n_accepted": 82
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.21.237.561 I slot print_timing: id  0 | task 15 | draft acceptance = 0.92135 (   82 accepted /    89 generated), mean len =  2.82"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure. The keeper must decide whether to keep the treasure or return it to the sea.\n\nStory seed 1: Write a short story about a lighthouse keeper who finds a mysterious ma"
+     },
+     {
+      "rep": 1,
+      "wall_s": 4.523,
+      "prompt_n": 20,
+      "prompt_ms": 315.016,
+      "prompt_per_second": 63.48883866216319,
+      "predicted_n": 128,
+      "predicted_ms": 4191.2,
+      "predicted_per_second": 30.3015842718076,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 315.016,
+       "prompt_per_token_ms": 15.750800000000002,
+       "prompt_per_second": 63.48883866216319,
+       "predicted_n": 128,
+       "predicted_ms": 4191.2,
+       "predicted_per_token_ms": 33.0015748031496,
+       "predicted_per_second": 30.3015842718076,
+       "draft_n": 86,
+       "draft_n_accepted": 84
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.25.760.751 I slot print_timing: id  0 | task 63 | draft acceptance = 0.97674 (   84 accepted /    86 generated), mean len =  2.95"
+       ]
+      },
+      "content_head": " Story seed 2: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 3: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 4: Write a s"
+     },
+     {
+      "rep": 2,
+      "wall_s": 6.008,
+      "prompt_n": 20,
+      "prompt_ms": 287.834,
+      "prompt_per_second": 69.4844945350445,
+      "predicted_n": 128,
+      "predicted_ms": 5704.283,
+      "predicted_per_second": 22.26397252730974,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 287.834,
+       "prompt_per_token_ms": 14.3917,
+       "prompt_per_second": 69.4844945350445,
+       "predicted_n": 128,
+       "predicted_ms": 5704.283,
+       "predicted_per_token_ms": 44.91561417322835,
+       "predicted_per_second": 22.26397252730974,
+       "draft_n": 116,
+       "draft_n_accepted": 68
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.31.769.480 I slot print_timing: id  0 | task 109 | draft acceptance = 0.58621 (   68 accepted /   116 generated), mean len =  2.17"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure, but the keeper must decide whether to keep it for himself or share it with the community.\n\nStory seed 3: Write a short story about a group of friends who discover "
+     }
+    ],
+    "32768": [
+     {
+      "rep": 0,
+      "wall_s": 125.351,
+      "prompt_n": 33621,
+      "prompt_ms": 120744.969,
+      "prompt_per_second": 278.4463839648673,
+      "predicted_n": 128,
+      "predicted_ms": 4485.716,
+      "predicted_per_second": 28.3120910909206,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 120744.969,
+       "prompt_per_token_ms": 3.5913556705630407,
+       "prompt_per_second": 278.4463839648673,
+       "predicted_n": 128,
+       "predicted_ms": 4485.716,
+       "predicted_per_token_ms": 35.320598425196856,
+       "predicted_per_second": 28.3120910909206,
+       "draft_n": 85,
+       "draft_n_accepted": 84
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "2.37.117.228 I slot print_timing: id  0 | task 171 | draft acceptance = 0.98824 (   84 accepted /    85 generated), mean len =  2.95"
+       ]
+      },
+      "content_head": " \nVariation 1: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: N"
+     },
+     {
+      "rep": 1,
+      "wall_s": 126.577,
+      "prompt_n": 33621,
+      "prompt_ms": 121580.907,
+      "prompt_per_second": 276.531906444817,
+      "predicted_n": 128,
+      "predicted_ms": 4888.476,
+      "predicted_per_second": 25.979466811333435,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 121580.907,
+       "prompt_per_token_ms": 3.616219237976265,
+       "prompt_per_second": 276.531906444817,
+       "predicted_n": 128,
+       "predicted_ms": 4888.476,
+       "predicted_per_token_ms": 38.491937007874014,
+       "predicted_per_second": 25.979466811333435,
+       "draft_n": 84,
+       "draft_n_accepted": 84
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "4.43.704.991 I slot print_timing: id  0 | task 234 | draft acceptance = 1.00000 (   84 accepted /    84 generated), mean len =  3.00"
+       ]
+      },
+      "content_head": " \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 4: N"
+     },
+     {
+      "rep": 2,
+      "wall_s": 131.828,
+      "prompt_n": 33621,
+      "prompt_ms": 125011.839,
+      "prompt_per_second": 268.94252791529607,
+      "predicted_n": 128,
+      "predicted_ms": 6722.77,
+      "predicted_per_second": 18.89102259931546,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 125011.839,
+       "prompt_per_token_ms": 3.718266529847417,
+       "prompt_per_second": 268.94252791529607,
+       "predicted_n": 128,
+       "predicted_ms": 6722.77,
+       "predicted_per_token_ms": 52.9351968503937,
+       "predicted_per_second": 18.89102259931546,
+       "draft_n": 130,
+       "draft_n_accepted": 61
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "6.55.534.948 I slot print_timing: id  0 | task 297 | draft acceptance = 0.46923 (   61 accepted /   130 generated), mean len =  1.94"
+       ]
+      },
+      "content_head": " The lighthouse keeper, named Eli, lived alone on a rocky island. One stormy night, a bottle washed ashore containing a yellowed map. The map showed a hidden cove with an X marking a spot. Eli decided"
+     }
+    ]
+   }
+  },
+  {
+   "build": "vulkan",
+   "n_max": 3,
+   "method": "llama-server scratch port 5999, /completion, temp 0, cache_prompt false",
+   "kv": "f16",
+   "ubatch": 256,
+   "ctx_size": 40960,
+   "cells": {
+    "0": [
+     {
+      "rep": 0,
+      "wall_s": 4.472,
+      "prompt_n": 20,
+      "prompt_ms": 280.702,
+      "prompt_per_second": 71.24993765630455,
+      "predicted_n": 128,
+      "predicted_ms": 4181.36,
+      "predicted_per_second": 30.372893030018943,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 280.702,
+       "prompt_per_token_ms": 14.0351,
+       "prompt_per_second": 71.24993765630455,
+       "predicted_n": 128,
+       "predicted_ms": 4181.36,
+       "predicted_per_token_ms": 32.92409448818897,
+       "predicted_per_second": 30.372893030018943,
+       "draft_n": 113,
+       "draft_n_accepted": 89
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.24.083.495 I slot print_timing: id  0 | task 15 | draft acceptance = 0.78761 (   89 accepted /   113 generated), mean len =  3.34"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure. The keeper must decide whether to keep the treasure or return it to the sea.\n\nStory seed 1: Write a short story about a lighthouse keeper who finds a mysterious ma"
+     },
+     {
+      "rep": 1,
+      "wall_s": 4.266,
+      "prompt_n": 20,
+      "prompt_ms": 271.172,
+      "prompt_per_second": 73.75392739663386,
+      "predicted_n": 128,
+      "predicted_ms": 3985.029,
+      "predicted_per_second": 31.869278743015418,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 271.172,
+       "prompt_per_token_ms": 13.558600000000002,
+       "prompt_per_second": 73.75392739663386,
+       "predicted_n": 128,
+       "predicted_ms": 3985.029,
+       "predicted_per_token_ms": 31.378181102362205,
+       "predicted_per_second": 31.869278743015418,
+       "draft_n": 102,
+       "draft_n_accepted": 92
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.28.350.049 I slot print_timing: id  0 | task 56 | draft acceptance = 0.90196 (   92 accepted /   102 generated), mean len =  3.71"
+       ]
+      },
+      "content_head": " Story seed 2: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 3: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 4: Write a s"
+     },
+     {
+      "rep": 2,
+      "wall_s": 6.112,
+      "prompt_n": 20,
+      "prompt_ms": 293.003,
+      "prompt_per_second": 68.25868677112521,
+      "predicted_n": 128,
+      "predicted_ms": 5804.779,
+      "predicted_per_second": 21.878524574320572,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 293.003,
+       "prompt_per_token_ms": 14.65015,
+       "prompt_per_second": 68.25868677112521,
+       "predicted_n": 128,
+       "predicted_ms": 5804.779,
+       "predicted_per_token_ms": 45.706921259842524,
+       "predicted_per_second": 21.878524574320572,
+       "draft_n": 151,
+       "draft_n_accepted": 76
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.34.462.568 I slot print_timing: id  0 | task 94 | draft acceptance = 0.50331 (   76 accepted /   151 generated), mean len =  2.49"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure, but the keeper must decide whether to keep it for himself or share it with the community.\n\nStory seed 3: Write a short story about a group of friends who discover "
+     }
+    ],
+    "32768": [
+     {
+      "rep": 0,
+      "wall_s": 131.007,
+      "prompt_n": 33621,
+      "prompt_ms": 126714.039,
+      "prompt_per_second": 265.32971614928954,
+      "predicted_n": 128,
+      "predicted_ms": 4171.198,
+      "predicted_per_second": 30.44688839992731,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 126714.039,
+       "prompt_per_token_ms": 3.7688956009636834,
+       "prompt_per_second": 265.32971614928954,
+       "predicted_n": 128,
+       "predicted_ms": 4171.198,
+       "predicted_per_token_ms": 32.844078740157485,
+       "predicted_per_second": 30.44688839992731,
+       "draft_n": 100,
+       "draft_n_accepted": 93
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "2.45.467.800 I slot print_timing: id  0 | task 148 | draft acceptance = 0.93000 (   93 accepted /   100 generated), mean len =  3.74"
+       ]
+      },
+      "content_head": " \nVariation 1: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: N"
+     },
+     {
+      "rep": 1,
+      "wall_s": 126.004,
+      "prompt_n": 33621,
+      "prompt_ms": 121698.266,
+      "prompt_per_second": 276.26523454327605,
+      "predicted_n": 128,
+      "predicted_ms": 4173.761,
+      "predicted_per_second": 30.428191743609656,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 121698.266,
+       "prompt_per_token_ms": 3.6197098837036377,
+       "prompt_per_second": 276.26523454327605,
+       "predicted_n": 128,
+       "predicted_ms": 4173.761,
+       "predicted_per_token_ms": 32.86425984251969,
+       "predicted_per_second": 30.428191743609656,
+       "draft_n": 100,
+       "draft_n_accepted": 93
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "4.51.473.700 I slot print_timing: id  0 | task 202 | draft acceptance = 0.93000 (   93 accepted /   100 generated), mean len =  3.74"
+       ]
+      },
+      "content_head": " \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 4: N"
+     },
+     {
+      "rep": 2,
+      "wall_s": 129.153,
+      "prompt_n": 33621,
+      "prompt_ms": 120802.402,
+      "prompt_per_second": 278.31400239872715,
+      "predicted_n": 128,
+      "predicted_ms": 8192.621,
+      "predicted_per_second": 15.50175456670094,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 120802.402,
+       "prompt_per_token_ms": 3.593063918384343,
+       "prompt_per_second": 278.31400239872715,
+       "predicted_n": 128,
+       "predicted_ms": 8192.621,
+       "predicted_per_token_ms": 64.50882677165353,
+       "predicted_per_second": 15.50175456670094,
+       "draft_n": 202,
+       "draft_n_accepted": 59
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "7.00.628.795 I slot print_timing: id  0 | task 256 | draft acceptance = 0.29208 (   59 accepted /   202 generated), mean len =  1.87"
+       ]
+      },
+      "content_head": " The lighthouse keeper, named Eli, lived alone on a rocky island. One stormy night, a bottle washed ashore containing a yellowed map. The map showed a hidden cove with an X marking a spot. Eli decided"
+     }
+    ]
+   }
+  },
+  {
+   "build": "vulkan",
+   "n_max": 4,
+   "method": "llama-server scratch port 5999, /completion, temp 0, cache_prompt false",
+   "kv": "f16",
+   "ubatch": 256,
+   "ctx_size": 40960,
+   "cells": {
+    "0": [
+     {
+      "rep": 0,
+      "wall_s": 4.158,
+      "prompt_n": 20,
+      "prompt_ms": 266.909,
+      "prompt_per_second": 74.93190563075805,
+      "predicted_n": 128,
+      "predicted_ms": 3882.319,
+      "predicted_per_second": 32.71240719786293,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 266.909,
+       "prompt_per_token_ms": 13.34545,
+       "prompt_per_second": 74.93190563075805,
+       "predicted_n": 128,
+       "predicted_ms": 3882.319,
+       "predicted_per_token_ms": 30.56944094488189,
+       "predicted_per_second": 32.71240719786293,
+       "draft_n": 127,
+       "draft_n_accepted": 95
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.24.034.765 I slot print_timing: id  0 | task 15 | draft acceptance = 0.74803 (   95 accepted /   127 generated), mean len =  3.97"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure. The keeper must decide whether to keep the treasure or return it to the sea.\n\nStory seed 1: Write a short story about a lighthouse keeper who finds a mysterious ma"
+     },
+     {
+      "rep": 1,
+      "wall_s": 4.518,
+      "prompt_n": 20,
+      "prompt_ms": 280.549,
+      "prompt_per_second": 71.28879447084111,
+      "predicted_n": 128,
+      "predicted_ms": 4222.216,
+      "predicted_per_second": 30.07899169535618,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 280.549,
+       "prompt_per_token_ms": 14.027449999999998,
+       "prompt_per_second": 71.28879447084111,
+       "predicted_n": 128,
+       "predicted_ms": 4222.216,
+       "predicted_per_token_ms": 33.24579527559055,
+       "predicted_per_second": 30.07899169535618,
+       "draft_n": 124,
+       "draft_n_accepted": 95
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.28.553.130 I slot print_timing: id  0 | task 50 | draft acceptance = 0.76613 (   95 accepted /   124 generated), mean len =  4.06"
+       ]
+      },
+      "content_head": " Story seed 2: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 3: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 4: Write a s"
+     },
+     {
+      "rep": 2,
+      "wall_s": 6.676,
+      "prompt_n": 20,
+      "prompt_ms": 298.986,
+      "prompt_per_second": 66.89276420969544,
+      "predicted_n": 128,
+      "predicted_ms": 6350.437,
+      "predicted_per_second": 19.99862371676154,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 298.986,
+       "prompt_per_token_ms": 14.9493,
+       "prompt_per_second": 66.89276420969544,
+       "predicted_n": 128,
+       "predicted_ms": 6350.437,
+       "predicted_per_token_ms": 50.00344094488189,
+       "predicted_per_second": 19.99862371676154,
+       "draft_n": 190,
+       "draft_n_accepted": 79
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.35.220.197 I slot print_timing: id  0 | task 85 | draft acceptance = 0.41579 (   79 accepted /   190 generated), mean len =  2.65"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure, but the keeper must decide whether to keep it for himself or share it with the community.\n\nStory seed 3: Write a short story about a group of friends who discover "
+     }
+    ],
+    "32768": [
+     {
+      "rep": 0,
+      "wall_s": 126.489,
+      "prompt_n": 33621,
+      "prompt_ms": 122236.869,
+      "prompt_per_second": 275.0479480949401,
+      "predicted_n": 128,
+      "predicted_ms": 4145.031,
+      "predicted_per_second": 30.63909534090336,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 122236.869,
+       "prompt_per_token_ms": 3.6357297224948693,
+       "prompt_per_second": 275.0479480949401,
+       "predicted_n": 128,
+       "predicted_ms": 4145.031,
+       "predicted_per_token_ms": 32.63803937007874,
+       "predicted_per_second": 30.63909534090336,
+       "draft_n": 113,
+       "draft_n_accepted": 98
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "2.41.719.192 I slot print_timing: id  0 | task 136 | draft acceptance = 0.86726 (   98 accepted /   113 generated), mean len =  4.38"
+       ]
+      },
+      "content_head": " \nVariation 1: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: N"
+     },
+     {
+      "rep": 1,
+      "wall_s": 127.083,
+      "prompt_n": 33621,
+      "prompt_ms": 122720.081,
+      "prompt_per_second": 273.96494303161353,
+      "predicted_n": 128,
+      "predicted_ms": 4250.263,
+      "predicted_per_second": 29.88050386529022,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 122720.081,
+       "prompt_per_token_ms": 3.650102049314417,
+       "prompt_per_second": 273.96494303161353,
+       "predicted_n": 128,
+       "predicted_ms": 4250.263,
+       "predicted_per_token_ms": 33.46663779527559,
+       "predicted_per_second": 29.88050386529022,
+       "draft_n": 116,
+       "draft_n_accepted": 97
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "4.48.802.534 I slot print_timing: id  0 | task 185 | draft acceptance = 0.83621 (   97 accepted /   116 generated), mean len =  4.34"
+       ]
+      },
+      "content_head": " \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 4: N"
+     },
+     {
+      "rep": 2,
+      "wall_s": 129.845,
+      "prompt_n": 33621,
+      "prompt_ms": 121290.736,
+      "prompt_per_second": 277.1934700767254,
+      "predicted_n": 128,
+      "predicted_ms": 8446.886,
+      "predicted_per_second": 15.0351265543302,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 121290.736,
+       "prompt_per_token_ms": 3.6075885904642933,
+       "prompt_per_second": 277.1934700767254,
+       "predicted_n": 128,
+       "predicted_ms": 8446.886,
+       "predicted_per_token_ms": 66.51091338582677,
+       "predicted_per_second": 15.0351265543302,
+       "draft_n": 235,
+       "draft_n_accepted": 67
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "6.58.645.997 I slot print_timing: id  0 | task 235 | draft acceptance = 0.28511 (   67 accepted /   235 generated), mean len =  2.14"
+       ]
+      },
+      "content_head": " The lighthouse keeper, named Eli, lived alone on a rocky island. One stormy night, a bottle washed ashore containing a yellowed map. The map showed a hidden cove with an X marking a spot. Eli decided"
+     }
+    ]
+   }
+  },
+  {
+   "build": "vulkan",
+   "n_max": 6,
+   "method": "llama-server scratch port 5999, /completion, temp 0, cache_prompt false",
+   "kv": "f16",
+   "ubatch": 256,
+   "ctx_size": 40960,
+   "cells": {
+    "0": [
+     {
+      "rep": 0,
+      "wall_s": 4.43,
+      "prompt_n": 20,
+      "prompt_ms": 267.599,
+      "prompt_per_second": 74.73869483817205,
+      "predicted_n": 128,
+      "predicted_ms": 4154.449,
+      "predicted_per_second": 30.56963751390377,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 267.599,
+       "prompt_per_token_ms": 13.37995,
+       "prompt_per_second": 74.73869483817205,
+       "predicted_n": 128,
+       "predicted_ms": 4154.449,
+       "predicted_per_token_ms": 32.712196850393696,
+       "predicted_per_second": 30.56963751390377,
+       "draft_n": 152,
+       "draft_n_accepted": 101
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.27.600.424 I slot print_timing: id  0 | task 14 | draft acceptance = 0.66447 (  101 accepted /   152 generated), mean len =  4.88"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure. The keeper must decide whether to keep the treasure or return it to the sea.\n\nStory seed 1: Write a short story about a lighthouse keeper who finds a mysterious ma"
+     },
+     {
+      "rep": 1,
+      "wall_s": 5.186,
+      "prompt_n": 20,
+      "prompt_ms": 290.902,
+      "prompt_per_second": 68.75167582209816,
+      "predicted_n": 128,
+      "predicted_ms": 4884.275,
+      "predicted_per_second": 26.001811937288544,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 290.902,
+       "prompt_per_token_ms": 14.5451,
+       "prompt_per_second": 68.75167582209816,
+       "predicted_n": 128,
+       "predicted_ms": 4884.275,
+       "predicted_per_token_ms": 38.45885826771653,
+       "predicted_per_second": 26.001811937288544,
+       "draft_n": 161,
+       "draft_n_accepted": 99
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.32.786.526 I slot print_timing: id  0 | task 43 | draft acceptance = 0.61491 (   99 accepted /   161 generated), mean len =  4.54"
+       ]
+      },
+      "content_head": " Story seed 2: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 3: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 4: Write a s"
+     },
+     {
+      "rep": 2,
+      "wall_s": 7.586,
+      "prompt_n": 20,
+      "prompt_ms": 285.131,
+      "prompt_per_second": 70.14319733736424,
+      "predicted_n": 128,
+      "predicted_ms": 7289.482,
+      "predicted_per_second": 17.4223627961493,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 285.131,
+       "prompt_per_token_ms": 14.256549999999999,
+       "prompt_per_second": 70.14319733736424,
+       "predicted_n": 128,
+       "predicted_ms": 7289.482,
+       "predicted_per_token_ms": 57.397496062992126,
+       "predicted_per_second": 17.4223627961493,
+       "draft_n": 249,
+       "draft_n_accepted": 85
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.40.371.953 I slot print_timing: id  0 | task 74 | draft acceptance = 0.34137 (   85 accepted /   249 generated), mean len =  3.02"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure, but the keeper must decide whether to keep it for himself or share it with the community.\n\nStory seed 3: Write a short story about a group of friends who discover "
+     }
+    ],
+    "32768": [
+     {
+      "rep": 0,
+      "wall_s": 126.039,
+      "prompt_n": 33621,
+      "prompt_ms": 121501.904,
+      "prompt_per_second": 276.71171309381293,
+      "predicted_n": 128,
+      "predicted_ms": 4406.386,
+      "predicted_per_second": 28.821805443281633,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 121501.904,
+       "prompt_per_token_ms": 3.6138694268463163,
+       "prompt_per_second": 276.71171309381293,
+       "predicted_n": 128,
+       "predicted_ms": 4406.386,
+       "predicted_per_token_ms": 34.695952755905516,
+       "predicted_per_second": 28.821805443281633,
+       "draft_n": 137,
+       "draft_n_accepted": 104
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "2.46.409.966 I slot print_timing: id  0 | task 119 | draft acceptance = 0.75912 (  104 accepted /   137 generated), mean len =  5.52"
+       ]
+      },
+      "content_head": " \nVariation 1: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: N"
+     },
+     {
+      "rep": 1,
+      "wall_s": 125.091,
+      "prompt_n": 33621,
+      "prompt_ms": 120810.655,
+      "prompt_per_second": 278.29498979208415,
+      "predicted_n": 128,
+      "predicted_ms": 4143.838,
+      "predicted_per_second": 30.647916255413463,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 120810.655,
+       "prompt_per_token_ms": 3.5933093899646056,
+       "prompt_per_second": 278.29498979208415,
+       "predicted_n": 128,
+       "predicted_ms": 4143.838,
+       "predicted_per_token_ms": 32.62864566929134,
+       "predicted_per_second": 30.647916255413463,
+       "draft_n": 131,
+       "draft_n_accepted": 105
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "4.51.501.242 I slot print_timing: id  0 | task 162 | draft acceptance = 0.80153 (  105 accepted /   131 generated), mean len =  5.77"
+       ]
+      },
+      "content_head": " \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 4: N"
+     },
+     {
+      "rep": 2,
+      "wall_s": 130.477,
+      "prompt_n": 33621,
+      "prompt_ms": 120604.058,
+      "prompt_per_second": 278.7717142983696,
+      "predicted_n": 128,
+      "predicted_ms": 9763.439,
+      "predicted_per_second": 13.007711729442873,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 120604.058,
+       "prompt_per_token_ms": 3.5871645102763154,
+       "prompt_per_second": 278.7717142983696,
+       "predicted_n": 128,
+       "predicted_ms": 9763.439,
+       "predicted_per_token_ms": 76.87747244094489,
+       "predicted_per_second": 13.007711729442873,
+       "draft_n": 315,
+       "draft_n_accepted": 74
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "7.01.979.156 I slot print_timing: id  0 | task 204 | draft acceptance = 0.23492 (   74 accepted /   315 generated), mean len =  2.40"
+       ]
+      },
+      "content_head": " The lighthouse keeper, named Eli, lived alone on a rocky island. One stormy night, a bottle washed ashore containing a yellowed map. The map showed a hidden cove with an X marking a spot. Eli decided"
+     }
+    ]
+   }
+  },
+  {
+   "build": "vulkan",
+   "n_max": 8,
+   "method": "llama-server scratch port 5999, /completion, temp 0, cache_prompt false",
+   "kv": "f16",
+   "ubatch": 256,
+   "ctx_size": 40960,
+   "cells": {
+    "0": [
+     {
+      "rep": 0,
+      "wall_s": 5.122,
+      "prompt_n": 20,
+      "prompt_ms": 280.481,
+      "prompt_per_second": 71.30607777353903,
+      "predicted_n": 128,
+      "predicted_ms": 4831.204,
+      "predicted_per_second": 26.287443047323197,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 280.481,
+       "prompt_per_token_ms": 14.024049999999999,
+       "prompt_per_second": 71.30607777353903,
+       "predicted_n": 128,
+       "predicted_ms": 4831.204,
+       "predicted_per_token_ms": 38.04097637795275,
+       "predicted_per_second": 26.287443047323197,
+       "draft_n": 184,
+       "draft_n_accepted": 104
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.23.212.048 I slot print_timing: id  0 | task 17 | draft acceptance = 0.56522 (  104 accepted /   184 generated), mean len =  5.52"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure. The keeper must decide whether to keep the treasure or return it to the sea.\n\nStory seed 1: Write a short story about a lighthouse keeper who finds a mysterious ma"
+     },
+     {
+      "rep": 1,
+      "wall_s": 5.612,
+      "prompt_n": 20,
+      "prompt_ms": 289.384,
+      "prompt_per_second": 69.11232134464932,
+      "predicted_n": 128,
+      "predicted_ms": 5311.721,
+      "predicted_per_second": 23.909388313128648,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 289.384,
+       "prompt_per_token_ms": 14.4692,
+       "prompt_per_second": 69.11232134464932,
+       "predicted_n": 128,
+       "predicted_ms": 5311.721,
+       "predicted_per_token_ms": 41.8245748031496,
+       "predicted_per_second": 23.909388313128648,
+       "draft_n": 198,
+       "draft_n_accepted": 102
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.28.824.294 I slot print_timing: id  0 | task 43 | draft acceptance = 0.51515 (  102 accepted /   198 generated), mean len =  5.08"
+       ]
+      },
+      "content_head": " Story seed 2: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 3: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 4: Write a s"
+     },
+     {
+      "rep": 2,
+      "wall_s": 9.329,
+      "prompt_n": 20,
+      "prompt_ms": 299.815,
+      "prompt_per_second": 66.70780314527292,
+      "predicted_n": 128,
+      "predicted_ms": 9001.781,
+      "predicted_per_second": 14.108319231494301,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 299.815,
+       "prompt_per_token_ms": 14.99075,
+       "prompt_per_second": 66.70780314527292,
+       "predicted_n": 128,
+       "predicted_ms": 9001.781,
+       "predicted_per_token_ms": 70.88016535433071,
+       "predicted_per_second": 14.108319231494301,
+       "draft_n": 338,
+       "draft_n_accepted": 84
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.38.143.506 I slot print_timing: id  0 | task 71 | draft acceptance = 0.24852 (   84 accepted /   338 generated), mean len =  2.95"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure, but the keeper must decide whether to keep it for himself or share it with the community.\n\nStory seed 3: Write a short story about a group of friends who discover "
+     }
+    ],
+    "32768": [
+     {
+      "rep": 0,
+      "wall_s": 124.861,
+      "prompt_n": 33621,
+      "prompt_ms": 120745.098,
+      "prompt_per_second": 278.44608648211954,
+      "predicted_n": 128,
+      "predicted_ms": 4012.204,
+      "predicted_per_second": 31.65342539910732,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 120745.098,
+       "prompt_per_token_ms": 3.5913595074507003,
+       "prompt_per_second": 278.44608648211954,
+       "predicted_n": 128,
+       "predicted_ms": 4012.204,
+       "predicted_per_token_ms": 31.592157480314963,
+       "predicted_per_second": 31.65342539910732,
+       "draft_n": 131,
+       "draft_n_accepted": 110
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "2.43.010.240 I slot print_timing: id  0 | task 117 | draft acceptance = 0.83969 (  110 accepted /   131 generated), mean len =  7.47"
+       ]
+      },
+      "content_head": " \nVariation 1: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: N"
+     },
+     {
+      "rep": 1,
+      "wall_s": 125.258,
+      "prompt_n": 33621,
+      "prompt_ms": 120849.405,
+      "prompt_per_second": 278.2057553365695,
+      "predicted_n": 128,
+      "predicted_ms": 4285.322,
+      "predicted_per_second": 29.63604601941231,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 120849.405,
+       "prompt_per_token_ms": 3.5944619434282146,
+       "prompt_per_second": 278.2057553365695,
+       "predicted_n": 128,
+       "predicted_ms": 4285.322,
+       "predicted_per_token_ms": 33.74269291338583,
+       "predicted_per_second": 29.63604601941231,
+       "draft_n": 139,
+       "draft_n_accepted": 109
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "4.48.271.119 I slot print_timing: id  0 | task 154 | draft acceptance = 0.78417 (  109 accepted /   139 generated), mean len =  7.06"
+       ]
+      },
+      "content_head": " \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 4: N"
+     },
+     {
+      "rep": 2,
+      "wall_s": 132.766,
+      "prompt_n": 33621,
+      "prompt_ms": 120969.882,
+      "prompt_per_second": 277.9286831080814,
+      "predicted_n": 128,
+      "predicted_ms": 11694.414,
+      "predicted_per_second": 10.859885754001867,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 120969.882,
+       "prompt_per_token_ms": 3.5980453288123493,
+       "prompt_per_second": 277.9286831080814,
+       "predicted_n": 128,
+       "predicted_ms": 11694.414,
+       "predicted_per_token_ms": 92.08200000000001,
+       "predicted_per_second": 10.859885754001867,
+       "draft_n": 396,
+       "draft_n_accepted": 76
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "7.01.036.763 I slot print_timing: id  0 | task 192 | draft acceptance = 0.19192 (   76 accepted /   396 generated), mean len =  2.49"
+       ]
+      },
+      "content_head": " The lighthouse keeper, named Eli, lived alone on a rocky island. One stormy night, a bottle washed ashore containing a yellowed map. The map showed a hidden cove with an X marking a spot. Eli decided"
+     }
+    ]
+   }
+  },
+  {
+   "build": "vulkan",
+   "n_max": 15,
+   "method": "llama-server scratch port 5999, /completion, temp 0, cache_prompt false",
+   "kv": "f16",
+   "ubatch": 256,
+   "ctx_size": 40960,
+   "cells": {
+    "0": [
+     {
+      "rep": 0,
+      "wall_s": 4.554,
+      "prompt_n": 20,
+      "prompt_ms": 260.672,
+      "prompt_per_second": 76.72477289467223,
+      "predicted_n": 128,
+      "predicted_ms": 4284.808,
+      "predicted_per_second": 29.639601120983716,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 260.672,
+       "prompt_per_token_ms": 13.033600000000002,
+       "prompt_per_second": 76.72477289467223,
+       "predicted_n": 128,
+       "predicted_ms": 4284.808,
+       "predicted_per_token_ms": 33.73864566929134,
+       "predicted_per_second": 29.639601120983716,
+       "draft_n": 297,
+       "draft_n_accepted": 107
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.19.560.568 I slot print_timing: id  0 | task 16 | draft acceptance = 0.36027 (  107 accepted /   297 generated), mean len =  6.35"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure. The keeper must decide whether to keep the treasure or return it to the sea.\n\nStory seed 1: Write a short story about a lighthouse keeper who finds a mysterious ma"
+     },
+     {
+      "rep": 1,
+      "wall_s": 4.969,
+      "prompt_n": 20,
+      "prompt_ms": 299.827,
+      "prompt_per_second": 66.70513329353261,
+      "predicted_n": 128,
+      "predicted_ms": 4652.401,
+      "predicted_per_second": 27.297732934026968,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 299.827,
+       "prompt_per_token_ms": 14.99135,
+       "prompt_per_second": 66.70513329353261,
+       "predicted_n": 128,
+       "predicted_ms": 4652.401,
+       "predicted_per_token_ms": 36.63307874015748,
+       "predicted_per_second": 27.297732934026968,
+       "draft_n": 310,
+       "draft_n_accepted": 106
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.24.530.467 I slot print_timing: id  0 | task 39 | draft acceptance = 0.34194 (  106 accepted /   310 generated), mean len =  6.05"
+       ]
+      },
+      "content_head": " Story seed 2: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 3: Write a short story about a lighthouse keeper who finds a mysterious map. Story seed 4: Write a s"
+     },
+     {
+      "rep": 2,
+      "wall_s": 9.282,
+      "prompt_n": 20,
+      "prompt_ms": 306.211,
+      "prompt_per_second": 65.3144400429769,
+      "predicted_n": 128,
+      "predicted_ms": 8959.674,
+      "predicted_per_second": 14.17462287132322,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 20,
+       "prompt_ms": 306.211,
+       "prompt_per_token_ms": 15.310550000000001,
+       "prompt_per_second": 65.3144400429769,
+       "predicted_n": 128,
+       "predicted_ms": 8959.674,
+       "predicted_per_token_ms": 70.54861417322836,
+       "predicted_per_second": 14.17462287132322,
+       "draft_n": 609,
+       "draft_n_accepted": 86
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "0.33.813.090 I slot print_timing: id  0 | task 63 | draft acceptance = 0.14122 (   86 accepted /   609 generated), mean len =  3.10"
+       ]
+      },
+      "content_head": " The map leads to a hidden treasure, but the keeper must decide whether to keep it for himself or share it with the community.\n\nStory seed 3: Write a short story about a group of friends who discover "
+     }
+    ],
+    "32768": [
+     {
+      "rep": 0,
+      "wall_s": 123.02,
+      "prompt_n": 33621,
+      "prompt_ms": 120648.229,
+      "prompt_per_second": 278.66965208415945,
+      "predicted_n": 128,
+      "predicted_ms": 2270.116,
+      "predicted_per_second": 55.944277737349104,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 120648.229,
+       "prompt_per_token_ms": 3.588478302251569,
+       "prompt_per_second": 278.66965208415945,
+       "predicted_n": 128,
+       "predicted_ms": 2270.116,
+       "predicted_per_token_ms": 17.874929133858267,
+       "predicted_per_second": 55.944277737349104,
+       "draft_n": 128,
+       "draft_n_accepted": 118
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "2.36.831.443 I slot print_timing: id  0 | task 107 | draft acceptance = 0.92188 (  118 accepted /   128 generated), mean len = 14.11"
+       ]
+      },
+      "content_head": " \nVariation 1: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: N"
+     },
+     {
+      "rep": 1,
+      "wall_s": 122.882,
+      "prompt_n": 33621,
+      "prompt_ms": 120526.498,
+      "prompt_per_second": 278.9511066686763,
+      "predicted_n": 128,
+      "predicted_ms": 2259.227,
+      "predicted_per_second": 56.21391741511588,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 120526.498,
+       "prompt_per_token_ms": 3.584857618750186,
+       "prompt_per_second": 278.9511066686763,
+       "predicted_n": 128,
+       "predicted_ms": 2259.227,
+       "predicted_per_token_ms": 17.78918897637795,
+       "predicted_per_second": 56.21391741511588,
+       "draft_n": 128,
+       "draft_n_accepted": 118
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "4.39.714.467 I slot print_timing: id  0 | task 136 | draft acceptance = 0.92188 (  118 accepted /   128 generated), mean len = 14.11"
+       ]
+      },
+      "content_head": " \nVariation 2: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 3: Now write a short story about a lighthouse keeper who finds a mysterious map. \nVariation 4: N"
+     },
+     {
+      "rep": 2,
+      "wall_s": 133.697,
+      "prompt_n": 33621,
+      "prompt_ms": 120559.675,
+      "prompt_per_second": 278.8743416901215,
+      "predicted_n": 128,
+      "predicted_ms": 13040.123,
+      "predicted_per_second": 9.739171938792294,
+      "timings_raw": {
+       "cache_n": 0,
+       "prompt_n": 33621,
+       "prompt_ms": 120559.675,
+       "prompt_per_token_ms": 3.5858444127182416,
+       "prompt_per_second": 278.8743416901215,
+       "predicted_n": 128,
+       "predicted_ms": 13040.123,
+       "predicted_per_token_ms": 102.67813385826771,
+       "predicted_per_second": 9.739171938792294,
+       "draft_n": 787,
+       "draft_n_accepted": 72
+      },
+      "acceptance_from_log": {
+       "rates": [],
+       "lines": [
+        "6.53.412.711 I slot print_timing: id  0 | task 165 | draft acceptance = 0.09149 (   72 accepted /   787 generated), mean len =  2.31"
+       ]
+      },
+      "content_head": " The lighthouse keeper, named Eli, lived alone on a rocky island. One stormy night, a bottle washed ashore containing a yellowed map. The map showed a hidden cove with an X marking a spot. Eli decided"
+     }
+    ]
+   }
+  }
+ ],
+ "finished": "2026-10-20T07:08:08Z"
+}

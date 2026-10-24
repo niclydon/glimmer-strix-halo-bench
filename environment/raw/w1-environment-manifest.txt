@@ -1,0 +1,27 @@
+date: 2026-10-20T04:29:26+00:00
+hostname: furnace
+kernel: 6.19.10-061910-generic
+rocm_version: 7.2.1
+cpu: model name	: AMD RYZEN AI MAX+ 395 w/ Radeon 8060S
+bios: EVO-X2 1.12
+power_profile_acpi: unknown
+powerprofilesctl: unknown
+co_residency: NONE - production stopped (forge-api stopped, llama-swap masked --runtime and stopped, nexus-health-watchdog.timer stopped)
+window_start_utc: 2026-10-20T04:17:06Z
+warmup: llama-bench default warmup runs enabled, discarded by tool (no --no-warmup passed)
+repetitions: 3
+27d9a805fa29b943cfb6ad4843367cd4eaaaf06bd452d8cc3e00a2cd18a677bc  /home/niclydon/glimmer-furnace-bench/models/dflash-kquant.gguf
+f48b452316f9b213758e8659444029b961a24a07f99a1abb2a9f88b06f7c00c6  /home/niclydon/glimmer-furnace-bench/models/mmproj-kquant.gguf
+82bece304887a313ece08400bc030f6066c7bff5b906b0cd40308ec8a409fd38  /home/niclydon/glimmer-furnace-bench/models/Muse-Glimmer-30B-UD-Q4_K_XL.gguf
+hip:
+ggml_cuda_init: found 1 ROCm devices (Total VRAM: 65536 MiB):
+  Device 0: AMD Radeon Graphics, gfx1151 (0x1151), VMM: no, Wave Size: 32, VRAM: 65536 MiB
+version: 0.7.0-dev (build 11719, commit 5aeac37a3)
+built with GNU 13.3.0 for Linux x86_64
+vulkan:
+ggml_vulkan: Found 1 Vulkan devices:
+ggml_vulkan: 0 = AMD Radeon Graphics (RADV GFX1151) (radv) | uma: 1 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: KHR_coopmat
+version: 0.7.0-dev (build 11719, commit 5aeac37a3)
+built with GNU 13.3.0 for Linux x86_64
+window_note: initial stop 2026-10-20T04:17:06Z; llama-swap resurrected 04:17:25Z by llama-swap-metrics.timer (Wants=llama-swap.service); genuine window 04:27:31Z after stopping llama-swap-metrics.timer and llama-swap-reaper.timer, verified inactive 70s; window_end 2026-10-20T07:14:36Z
+power_profile: ACPI platform_profile not present on this host, powerprofilesctl not installed; scaling_governor=powersave; rocm power cap via rocm-smi at restore: see restore.log

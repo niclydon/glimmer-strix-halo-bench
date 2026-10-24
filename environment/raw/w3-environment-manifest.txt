@@ -1,0 +1,24 @@
+date: 2026-10-24T03:11:48+00:00
+hostname: furnace
+kernel: 6.19.10-061910-generic
+rocm_version: 7.2.1
+cpu: model name	: AMD RYZEN AI MAX+ 395 w/ Radeon 8060S
+scaling_governor: powersave
+power_profile_acpi: unknown
+powerprofilesctl: unknown
+co_residency: NONE on GPU - forge-api stopped for window; llama-swap + metrics/reaper timers + watchdog already inactive pre-window (sprint posture); CPU estate churn may be present (sprint), load recorded in window-open.log
+bench_build: /home/niclydon/llama.cpp-bench/build-hip (b11719, 5aeac37a3)
+ggml_cuda_init: found 1 ROCm devices (Total VRAM: 65536 MiB):
+  Device 0: AMD Radeon Graphics, gfx1151 (0x1151), VMM: no, Wave Size: 32, VRAM: 65536 MiB
+version: 0.7.0-dev (build 11719, commit 5aeac37a3)
+gguf_sha256 (foreground, pre-window):
+82bece304887a313ece08400bc030f6066c7bff5b906b0cd40308ec8a409fd38  /home/niclydon/glimmer-furnace-bench/models/Muse-Glimmer-30B-UD-Q4_K_XL.gguf
+27d9a805fa29b943cfb6ad4843367cd4eaaaf06bd452d8cc3e00a2cd18a677bc  /home/niclydon/glimmer-furnace-bench/models/dflash-kquant.gguf
+f48b452316f9b213758e8659444029b961a24a07f99a1abb2a9f88b06f7c00c6  /home/niclydon/glimmer-furnace-bench/models/mmproj-kquant.gguf
+ladder_files:
+total 18G
+-rw-rw-r-- 1 niclydon niclydon 1.6G Oct 18 14:46 dflash-kquant.gguf
+-rw-rw-r-- 1 niclydon niclydon 165K Oct 18 14:48 download2.log
+-rw-rw-r-- 1 niclydon niclydon  446 Oct 18 14:11 download.log
+-rw-rw-r-- 1 niclydon niclydon 1.4G Oct 18 14:48 mmproj-kquant.gguf
+-rw-rw-r-- 1 niclydon niclydon  15G Oct 18 14:43 Muse-Glimmer-30B-UD-Q4_K_XL.gguf

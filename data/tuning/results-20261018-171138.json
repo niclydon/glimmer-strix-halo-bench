@@ -1,0 +1,737 @@
+[
+ {
+  "cell": "baseline-nmax16-q8",
+  "load_s": 16.0,
+  "runs": [
+   {
+    "decode": {
+     "wall_s": 30.0,
+     "prompt_tokens": 93,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 77.64195537507743,
+     "decode_tok_s": 17.747989250067224,
+     "draft_accept_rate": 0.114,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 56.8,
+     "prompt_tokens": 20568,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 363.8218812185301,
+     "decode_tok_s": 23.887279341257084,
+     "draft_accept_rate": 0.714,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 4.55,
+     "prompt_tokens": 654,
+     "cached_tokens": 0,
+     "completion_tokens": 141,
+     "prompt_tok_s": 316.0756358364043,
+     "decode_tok_s": 60.36798599462724,
+     "draft_accept_rate": 0.556,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   },
+   {
+    "decode": {
+     "wall_s": 31.03,
+     "prompt_tokens": 93,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 186.86706317312328,
+     "decode_tok_s": 16.76946799043294,
+     "draft_accept_rate": 0.102,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 59.42,
+     "prompt_tokens": 20568,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 347.7828028514224,
+     "decode_tok_s": 22.558959451881737,
+     "draft_accept_rate": 0.714,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 1.97,
+     "prompt_tokens": 654,
+     "cached_tokens": 602,
+     "completion_tokens": 108,
+     "prompt_tok_s": 137.47993982608787,
+     "decode_tok_s": 76.34856903516102,
+     "draft_accept_rate": 0.726,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   }
+  ],
+  "args": [
+   "-ngl",
+   "99",
+   "-fit",
+   "off",
+   "-fa",
+   "on",
+   "--host",
+   "127.0.0.1",
+   "--port",
+   "5999",
+   "--ctx-size",
+   "65536",
+   "--parallel",
+   "1",
+   "--jinja",
+   "--alias",
+   "muse-glimmer-30b",
+   "-m",
+   "/services/models/muse-glimmer-30b/Muse-Glimmer-30B-UD-Q4_K_XL.gguf",
+   "--cache-type-k",
+   "q8_0",
+   "--cache-type-v",
+   "q8_0",
+   "--spec-type",
+   "draft-dflash",
+   "--model-draft",
+   "/services/models/muse-glimmer-30b/dflash-kquant.gguf",
+   "--spec-draft-n-max",
+   "16",
+   "--spec-draft-n-min",
+   "3"
+  ]
+ },
+ {
+  "cell": "nmax4-q8",
+  "load_s": 8.0,
+  "runs": [
+   {
+    "decode": {
+     "wall_s": 31.62,
+     "prompt_tokens": 92,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 135.0555856494632,
+     "decode_tok_s": 16.5230054396256,
+     "draft_accept_rate": 0.332,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 58.36,
+     "prompt_tokens": 20567,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 355.3087285300181,
+     "decode_tok_s": 14.889435307530652,
+     "draft_accept_rate": 0.333,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 6.3,
+     "prompt_tokens": 653,
+     "cached_tokens": 0,
+     "completion_tokens": 107,
+     "prompt_tok_s": 292.4355040884991,
+     "decode_tok_s": 27.175257594523107,
+     "draft_accept_rate": 0.664,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   },
+   {
+    "decode": {
+     "wall_s": 28.66,
+     "prompt_tokens": 92,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 182.72930044470752,
+     "decode_tok_s": 18.18737307989745,
+     "draft_accept_rate": 0.358,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 57.62,
+     "prompt_tokens": 20567,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 359.67425762009657,
+     "decode_tok_s": 14.90976397843622,
+     "draft_accept_rate": 0.333,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 4.5,
+     "prompt_tokens": 653,
+     "cached_tokens": 602,
+     "completion_tokens": 107,
+     "prompt_tok_s": 135.8666695083225,
+     "decode_tok_s": 26.93419265265716,
+     "draft_accept_rate": 0.664,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   }
+  ],
+  "args": [
+   "-ngl",
+   "99",
+   "-fit",
+   "off",
+   "-fa",
+   "on",
+   "--host",
+   "127.0.0.1",
+   "--port",
+   "5999",
+   "--ctx-size",
+   "65536",
+   "--parallel",
+   "1",
+   "--jinja",
+   "--alias",
+   "muse-glimmer-30b",
+   "-m",
+   "/services/models/muse-glimmer-30b/Muse-Glimmer-30B-UD-Q4_K_XL.gguf",
+   "--cache-type-k",
+   "q8_0",
+   "--cache-type-v",
+   "q8_0",
+   "--spec-type",
+   "draft-dflash",
+   "--model-draft",
+   "/services/models/muse-glimmer-30b/dflash-kquant.gguf",
+   "--spec-draft-n-max",
+   "4",
+   "--spec-draft-n-min",
+   "3"
+  ]
+ },
+ {
+  "cell": "nmax4-f16",
+  "load_s": 8.0,
+  "runs": [
+   {
+    "decode": {
+     "wall_s": 29.0,
+     "prompt_tokens": 92,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 115.09768916367767,
+     "decode_tok_s": 18.13121078238623,
+     "draft_accept_rate": 0.341,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 57.9,
+     "prompt_tokens": 20567,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 357.4460464303565,
+     "decode_tok_s": 18.695033263805616,
+     "draft_accept_rate": 0.444,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 6.12,
+     "prompt_tokens": 653,
+     "cached_tokens": 0,
+     "completion_tokens": 107,
+     "prompt_tok_s": 316.2638056658201,
+     "decode_tok_s": 27.68448772858964,
+     "draft_accept_rate": 0.664,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   },
+   {
+    "decode": {
+     "wall_s": 30.29,
+     "prompt_tokens": 92,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 184.25242582337802,
+     "decode_tok_s": 17.19641611880994,
+     "draft_accept_rate": 0.317,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 76.1,
+     "prompt_tokens": 20567,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 271.4581459379526,
+     "decode_tok_s": 17.826991593300107,
+     "draft_accept_rate": 0.444,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 5.09,
+     "prompt_tokens": 653,
+     "cached_tokens": 602,
+     "completion_tokens": 107,
+     "prompt_tok_s": 116.77134110740445,
+     "decode_tok_s": 24.068902455777366,
+     "draft_accept_rate": 0.664,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   }
+  ],
+  "args": [
+   "-ngl",
+   "99",
+   "-fit",
+   "off",
+   "-fa",
+   "on",
+   "--host",
+   "127.0.0.1",
+   "--port",
+   "5999",
+   "--ctx-size",
+   "65536",
+   "--parallel",
+   "1",
+   "--jinja",
+   "--alias",
+   "muse-glimmer-30b",
+   "-m",
+   "/services/models/muse-glimmer-30b/Muse-Glimmer-30B-UD-Q4_K_XL.gguf",
+   "--cache-type-k",
+   "f16",
+   "--cache-type-v",
+   "f16",
+   "--spec-type",
+   "draft-dflash",
+   "--model-draft",
+   "/services/models/muse-glimmer-30b/dflash-kquant.gguf",
+   "--spec-draft-n-max",
+   "4",
+   "--spec-draft-n-min",
+   "3"
+  ]
+ },
+ {
+  "cell": "nmax4-f16-ub256",
+  "load_s": 10.0,
+  "runs": [
+   {
+    "decode": {
+     "wall_s": 28.28,
+     "prompt_tokens": 95,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 154.92068876107479,
+     "decode_tok_s": 18.47842701504083,
+     "draft_accept_rate": 0.355,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 62.65,
+     "prompt_tokens": 20570,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 330.1910290503744,
+     "decode_tok_s": 18.806688733181446,
+     "draft_accept_rate": 0.444,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 6.37,
+     "prompt_tokens": 656,
+     "cached_tokens": 0,
+     "completion_tokens": 110,
+     "prompt_tok_s": 303.44366933706345,
+     "decode_tok_s": 27.39872714060097,
+     "draft_accept_rate": 0.658,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   },
+   {
+    "decode": {
+     "wall_s": 28.01,
+     "prompt_tokens": 95,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 193.0674557367454,
+     "decode_tok_s": 18.631578724764328,
+     "draft_accept_rate": 0.363,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 60.55,
+     "prompt_tokens": 20570,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 341.6834114460363,
+     "decode_tok_s": 18.752980384382518,
+     "draft_accept_rate": 0.444,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 4.74,
+     "prompt_tokens": 656,
+     "cached_tokens": 602,
+     "completion_tokens": 110,
+     "prompt_tok_s": 134.84930590065602,
+     "decode_tok_s": 26.643148995333295,
+     "draft_accept_rate": 0.658,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   }
+  ],
+  "args": [
+   "-ngl",
+   "99",
+   "-fit",
+   "off",
+   "-fa",
+   "on",
+   "--host",
+   "127.0.0.1",
+   "--port",
+   "5999",
+   "--ctx-size",
+   "65536",
+   "--parallel",
+   "1",
+   "--jinja",
+   "--alias",
+   "muse-glimmer-30b",
+   "-m",
+   "/services/models/muse-glimmer-30b/Muse-Glimmer-30B-UD-Q4_K_XL.gguf",
+   "--cache-type-k",
+   "f16",
+   "--cache-type-v",
+   "f16",
+   "--spec-type",
+   "draft-dflash",
+   "--model-draft",
+   "/services/models/muse-glimmer-30b/dflash-kquant.gguf",
+   "--spec-draft-n-max",
+   "4",
+   "--spec-draft-n-min",
+   "3",
+   "--ubatch-size",
+   "256"
+  ]
+ },
+ {
+  "cell": "nmax4-f16-ub1024",
+  "load_s": 10.0,
+  "runs": [
+   {
+    "decode": {
+     "wall_s": 28.27,
+     "prompt_tokens": 96,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 139.53346404905764,
+     "decode_tok_s": 18.537265381159912,
+     "draft_accept_rate": 0.358,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 61.22,
+     "prompt_tokens": 20571,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 337.8722785492691,
+     "decode_tok_s": 21.16210169901445,
+     "draft_accept_rate": 0.667,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 5.96,
+     "prompt_tokens": 657,
+     "cached_tokens": 0,
+     "completion_tokens": 111,
+     "prompt_tok_s": 336.1225880518396,
+     "decode_tok_s": 29.591513369176724,
+     "draft_accept_rate": 0.732,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   },
+   {
+    "decode": {
+     "wall_s": 28.51,
+     "prompt_tokens": 96,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 193.52575706872986,
+     "decode_tok_s": 18.289670949491985,
+     "draft_accept_rate": 0.357,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 61.4,
+     "prompt_tokens": 20571,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 338.17210676311913,
+     "decode_tok_s": 12.555310627353,
+     "draft_accept_rate": 0.2,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 4.88,
+     "prompt_tokens": 657,
+     "cached_tokens": 602,
+     "completion_tokens": 111,
+     "prompt_tok_s": 134.2072257170326,
+     "decode_tok_s": 26.777678808558825,
+     "draft_accept_rate": 0.637,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   }
+  ],
+  "args": [
+   "-ngl",
+   "99",
+   "-fit",
+   "off",
+   "-fa",
+   "on",
+   "--host",
+   "127.0.0.1",
+   "--port",
+   "5999",
+   "--ctx-size",
+   "65536",
+   "--parallel",
+   "1",
+   "--jinja",
+   "--alias",
+   "muse-glimmer-30b",
+   "-m",
+   "/services/models/muse-glimmer-30b/Muse-Glimmer-30B-UD-Q4_K_XL.gguf",
+   "--cache-type-k",
+   "f16",
+   "--cache-type-v",
+   "f16",
+   "--spec-type",
+   "draft-dflash",
+   "--model-draft",
+   "/services/models/muse-glimmer-30b/dflash-kquant.gguf",
+   "--spec-draft-n-max",
+   "4",
+   "--spec-draft-n-min",
+   "3",
+   "--ubatch-size",
+   "1024"
+  ]
+ },
+ {
+  "cell": "nospec-f16-ub256",
+  "load_s": 12.0,
+  "runs": [
+   {
+    "decode": {
+     "wall_s": 38.86,
+     "prompt_tokens": 94,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 198.01729912830257,
+     "decode_tok_s": 13.31682221114601,
+     "draft_accept_rate": null,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 58.28,
+     "prompt_tokens": 20569,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 356.1562801955048,
+     "decode_tok_s": 12.720681101610984,
+     "draft_accept_rate": null,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 10.17,
+     "prompt_tokens": 655,
+     "cached_tokens": 0,
+     "completion_tokens": 109,
+     "prompt_tok_s": 331.98343630733046,
+     "decode_tok_s": 13.497376447453025,
+     "draft_accept_rate": null,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   },
+   {
+    "decode": {
+     "wall_s": 38.59,
+     "prompt_tokens": 94,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 191.69003313790466,
+     "decode_tok_s": 13.436207529193185,
+     "draft_accept_rate": null,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 58.35,
+     "prompt_tokens": 20569,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 355.76811332580615,
+     "decode_tok_s": 12.510253940283196,
+     "draft_accept_rate": null,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 8.72,
+     "prompt_tokens": 655,
+     "cached_tokens": 602,
+     "completion_tokens": 109,
+     "prompt_tok_s": 149.09837679691674,
+     "decode_tok_s": 13.243322882144358,
+     "draft_accept_rate": null,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   }
+  ],
+  "args": [
+   "-ngl",
+   "99",
+   "-fit",
+   "off",
+   "-fa",
+   "on",
+   "--host",
+   "127.0.0.1",
+   "--port",
+   "5999",
+   "--ctx-size",
+   "65536",
+   "--parallel",
+   "1",
+   "--jinja",
+   "--alias",
+   "muse-glimmer-30b",
+   "-m",
+   "/services/models/muse-glimmer-30b/Muse-Glimmer-30B-UD-Q4_K_XL.gguf",
+   "--cache-type-k",
+   "f16",
+   "--cache-type-v",
+   "f16",
+   "--ubatch-size",
+   "256"
+  ]
+ },
+ {
+  "cell": "nmax3-f16-ub256",
+  "load_s": 16.3,
+  "runs": [
+   {
+    "decode": {
+     "wall_s": 27.35,
+     "prompt_tokens": 95,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 154.95783515748607,
+     "decode_tok_s": 19.12075580493611,
+     "draft_accept_rate": 0.441,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 61.63,
+     "prompt_tokens": 20570,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 336.3588198065434,
+     "decode_tok_s": 14.994687596394419,
+     "draft_accept_rate": 0.333,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 6.05,
+     "prompt_tokens": 656,
+     "cached_tokens": 0,
+     "completion_tokens": 110,
+     "prompt_tok_s": 311.6784884353502,
+     "decode_tok_s": 29.403029483145996,
+     "draft_accept_rate": 0.802,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   },
+   {
+    "decode": {
+     "wall_s": 27.38,
+     "prompt_tokens": 95,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 186.52393985682815,
+     "decode_tok_s": 19.076383482046996,
+     "draft_accept_rate": 0.403,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 60.4,
+     "prompt_tokens": 20570,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 343.0418873686213,
+     "decode_tok_s": 15.002464690627747,
+     "draft_accept_rate": 0.333,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 4.3,
+     "prompt_tokens": 656,
+     "cached_tokens": 602,
+     "completion_tokens": 110,
+     "prompt_tok_s": 131.56099557565244,
+     "decode_tok_s": 29.93154463520999,
+     "draft_accept_rate": 0.839,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   }
+  ],
+  "args": [
+   "-ngl",
+   "99",
+   "-fit",
+   "off",
+   "-fa",
+   "on",
+   "--host",
+   "127.0.0.1",
+   "--port",
+   "5999",
+   "--ctx-size",
+   "65536",
+   "--parallel",
+   "1",
+   "--jinja",
+   "--alias",
+   "muse-glimmer-30b",
+   "-m",
+   "/services/models/muse-glimmer-30b/Muse-Glimmer-30B-UD-Q4_K_XL.gguf",
+   "--cache-type-k",
+   "f16",
+   "--cache-type-v",
+   "f16",
+   "--spec-type",
+   "draft-dflash",
+   "--model-draft",
+   "/services/models/muse-glimmer-30b/dflash-kquant.gguf",
+   "--spec-draft-n-max",
+   "3",
+   "--spec-draft-n-min",
+   "3",
+   "--ubatch-size",
+   "256"
+  ]
+ }
+]

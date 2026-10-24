@@ -1,0 +1,107 @@
+[
+ {
+  "cell": "nmax15-f16-ubdefault",
+  "load_s": 8.0,
+  "runs": [
+   {
+    "decode": {
+     "wall_s": 33.65,
+     "prompt_tokens": 95,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 151.4207248749185,
+     "decode_tok_s": 15.480305718770285,
+     "draft_accept_rate": 0.12,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 60.54,
+     "prompt_tokens": 20570,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 341.4059710458589,
+     "decode_tok_s": 24.520278270129396,
+     "draft_accept_rate": 0.714,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 4.1,
+     "prompt_tokens": 656,
+     "cached_tokens": 0,
+     "completion_tokens": 110,
+     "prompt_tok_s": 284.739276918496,
+     "decode_tok_s": 72.60693536117621,
+     "draft_accept_rate": 0.741,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   },
+   {
+    "decode": {
+     "wall_s": 29.59,
+     "prompt_tokens": 95,
+     "cached_tokens": 0,
+     "completion_tokens": 512,
+     "prompt_tok_s": 161.9935782335197,
+     "decode_tok_s": 17.662290439602657,
+     "draft_accept_rate": 0.112,
+     "finish": "length"
+    },
+    "prefill": {
+     "wall_s": 57.93,
+     "prompt_tokens": 20570,
+     "cached_tokens": 49,
+     "completion_tokens": 8,
+     "prompt_tok_s": 356.8270033794843,
+     "decode_tok_s": 23.42241659110149,
+     "draft_accept_rate": 0.625,
+     "finish": "length"
+    },
+    "agent": {
+     "wall_s": 2.08,
+     "prompt_tokens": 656,
+     "cached_tokens": 602,
+     "completion_tokens": 110,
+     "prompt_tok_s": 130.85611400960096,
+     "decode_tok_s": 78.26406006658908,
+     "draft_accept_rate": 0.741,
+     "finish": "tool_calls",
+     "tool_calls": 1
+    }
+   }
+  ],
+  "args": [
+   "-ngl",
+   "99",
+   "-fit",
+   "off",
+   "-fa",
+   "on",
+   "--host",
+   "127.0.0.1",
+   "--port",
+   "5999",
+   "--ctx-size",
+   "65536",
+   "--parallel",
+   "1",
+   "--jinja",
+   "--alias",
+   "muse-glimmer-30b",
+   "-m",
+   "/services/models/muse-glimmer-30b/Muse-Glimmer-30B-UD-Q4_K_XL.gguf",
+   "--cache-type-k",
+   "f16",
+   "--cache-type-v",
+   "f16",
+   "--spec-type",
+   "draft-dflash",
+   "--model-draft",
+   "/services/models/muse-glimmer-30b/dflash-kquant.gguf",
+   "--spec-draft-n-max",
+   "15",
+   "--spec-draft-n-min",
+   "3"
+  ]
+ }
+]
