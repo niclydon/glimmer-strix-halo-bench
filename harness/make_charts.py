@@ -39,7 +39,7 @@ ax.errorbar(DLAB, hip_tg, yerr=hip_e, marker="o", color=HIP, capsize=3, label="H
 # ubatch-256 baseline point from the same record's DFlash-settings table.
 ax.errorbar(["32k"], [11.12], yerr=[0.94], marker="D", color=HIP, markersize=7,
         capsize=3, label="HIP tg128 at 32k, ubatch 256 (11.12 ± 0.94)")
-ax.set_title("Decode at depth: the HIP cliff is ubatch-sensitive")
+ax.set_title("Decode at depth: Vulkan flat; HIP varies by window")
 ax.set_ylabel("tok/s"); ax.set_xlabel("context depth (tokens; spacing not to scale)"); ax.legend(fontsize=8.5)
 fig.tight_layout(); fig.savefig("chart-hip-vulkan.png"); plt.close(fig)
 

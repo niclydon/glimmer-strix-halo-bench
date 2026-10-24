@@ -1,5 +1,10 @@
 # Crucible context-depth sweep — Glimmer publication package — 2026-10-19
 
+## Status note - added 2026-10-24
+
+Status lines in this record ("nothing from this sweep has been published") describe the moment of writing; the package was published later. The exact run scripts named below were session scripts on Crucible and are not in the package; the sweep's data and this record are complete.
+
+
 Run window: scheduled Mon 2026-10-19 23:07 EDT (America/New_York); executed on Crucible only.
 Furnace production untouched. Declared maintenance window approved by Nic in the Glimmer build chat, Oct 19, 2026.
 

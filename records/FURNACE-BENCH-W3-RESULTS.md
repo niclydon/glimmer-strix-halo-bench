@@ -20,6 +20,8 @@ always consistent and unaffected. Thermal language below is scoped
 to the single 30-minute soak described. The original text below is
 unchanged.
 
+Status note (2026-10-24): status lines in this record ("not published anywhere") describe the moment of writing; the package was published later.
+
 
 Glimmer benchmark program, Furnace (GMKtec EVO-X2, Ryzen AI Max+ 395 / Radeon 8060S gfx1151).
 Phase 4 per `FURNACE-BENCH-PLAN.md`: quant ladder (UD-Q4_K_XL vs UD-Q5_K_XL vs UD-Q6_K_XL), power and thermal (1 Hz rocm-smi through the runs plus a 30-minute sustained decode soak), and the mmproj vision stretch.

@@ -17,6 +17,8 @@ narrative used in the reasoning-tax test is synthetic, composed as a
 string literal in the test harness for this bench; it is not a record
 of a real incident. The original text below is unchanged.
 
+Addendum (2026-10-24, second review): the serving matrix's texture is wider than the summary suggests - the 65,536 two-slot cell's two reps aggregate 11.50 and 24.33 tok/s, and one 131,072 two-slot request generated only 2 tokens. Status lines in this record ("not published anywhere") describe the moment of writing; the package was published later.
+
 
 Glimmer benchmark program, Furnace (GMKtec EVO-X2, Ryzen AI Max+ 395 / Radeon 8060S gfx1151).
 Phase 3 per `FURNACE-BENCH-PLAN.md`: serving shape (context × parallel slots), KV f16 vs q8_0 at full 131k depth, prefill ubatch/batch focus, and the agent workload suite on the real serving path.

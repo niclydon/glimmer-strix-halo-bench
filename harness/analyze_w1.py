@@ -1,5 +1,5 @@
 import json, re, statistics, os
-base="/home/niclydon/glimmer-furnace-bench/results-w1"
+base=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "w1")
 def load(n):
     with open(os.path.join(base,n)) as f: return json.load(f)
 out=[]

@@ -18,6 +18,8 @@ story-variant observations (n=1 per cell), e.g. HIP n-max 15 at
 undrafted. The llama-bench backend cells are unaffected. The original
 text below is unchanged.
 
+Status note (2026-10-24): status lines in this record ("not published anywhere") describe the moment of writing; the package was published later.
+
 
 Glimmer benchmark program, Furnace (GMKtec EVO-X2, Ryzen AI Max+ 395 / Radeon 8060S gfx1151).
 Phase 2 per `FURNACE-BENCH-PLAN.md`: canonical llama-bench (HIP vs Vulkan) + DFlash sweep.

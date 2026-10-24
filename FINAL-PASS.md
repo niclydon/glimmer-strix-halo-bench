@@ -35,11 +35,13 @@ the result files generated from them are excluded from this repo; the
 records document their shapes, sizes, and results. See the README's
 "What's withheld, and why."
 
-**Substituted — third-party names in test prompts.** The agent-suite
-prompts in the window 2 and 3 data and harness scripts used four real
-contacts' names as `search_contacts` inputs. In the public copies
-they are replaced with generic placeholder names (29 substitutions
-across 5 files). No measurement depends on the name strings.
+**Substituted — third-party names in test prompts and outputs.** The
+agent-suite prompts in the window 2 and 3 data and harness scripts
+used four real contacts' names as `search_contacts` inputs. In the
+public copies they are replaced with generic placeholder names
+wherever they appear, in the prompts and in the recorded model
+outputs alike (29 substitutions across 5 files). No measurement
+depends on the name strings.
 
 **Redacted — one network detail.** A private interconnect address
 appeared once in the window 1 record; it is removed in the public
@@ -53,7 +55,7 @@ file layout). They evidence window restores only; the records
 document the restores, so the snapshots are excluded.
 
 **Reviewed and kept, deliberately:**
-- The author's own username in absolute file paths (83 occurrences):
+- The author's own username in absolute file paths (82 occurrences):
   the repo is published under his own name, and the paths are
   provenance for the raw data.
 - The two machine names used throughout the article and records.

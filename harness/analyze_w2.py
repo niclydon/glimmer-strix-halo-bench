@@ -1,5 +1,5 @@
-import json, statistics as st
-d = json.load(open('/home/hatch/workspace/glimmer/results-w2-raw.json'))
+import json, os, statistics as st
+d = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'w2', 'results-w2.json')))
 S = d['sections']
 def ms(vals):
     vals=[v for v in vals if v is not None]

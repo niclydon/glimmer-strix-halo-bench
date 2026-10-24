@@ -88,3 +88,41 @@ contemporaneous was rewritten.
   will either accept that disclosure explicitly or publish from a
   sanitized history. It is recorded here so the choice is deliberate.
   The repository remains private in the meantime.
+
+## Second review pass — 2026-10-24
+
+A second independent audit (recomputing every article number from the
+raw data) produced further corrections, applied the same day:
+
+- The window 1 HIP decode cliff did not reproduce: window 3 read
+  12.21 tok/s in the same nominal cell (HIP, ubatch 512, depth
+  32,768) against window 1's 6.43. The article now presents the cliff
+  as a one-window observation with unknown cause; the within-window
+  ubatch comparison was time-confounded. The chart title and the
+  settings-card advice were corrected accordingly.
+- Quant ladder: the first-pass Q4 depth-0 figure (9.93 tok/s) is now
+  disclosed alongside the supplemental run's 11.65, and the deficit
+  range is stated as roughly 26-43% across both passes. The Q5/Q6
+  depth-0 separation is described with its actual thinness (intervals
+  miss overlapping by 0.03; reps overlap). The agent-suite subset is
+  described as the synthetic task set it is.
+- Reasoning control: the article now reports the probe table as
+  recorded - `--reasoning-budget` inert, `--reasoning-effort low`
+  partial (brief completed with content comparable to the kwarg),
+  `--reasoning off` proven inert separately - and states that no knob
+  rescued judge-shaped calls at small budgets.
+- Setup: production serving is from Crucible only; "same build" is
+  scoped to one commit in four build trees; the raw /completion
+  construction of the server-path benches is stated in the setup; the
+  external KV figure is linked to its primary source and marked as
+  context this repo cannot check.
+- Story-variant ranges at depth are stated across all draft sizes
+  (HIP 10.6-16.4, Vulkan 9.7-18.9 tok/s).
+- Vision: the response also called the rectangle a square; the
+  article now counts three misses.
+- Harness: `analyze_w1.py` and `analyze_w2.py` now resolve their data
+  paths relative to the script instead of hard-coded absolute paths.
+- Records: status lines from the moment of writing are annotated as
+  such; the README's withheld list now includes the longtext payload;
+  FINAL-PASS's substitution note covers recorded outputs as well as
+  prompts, and its path-occurrence count is corrected to 82.

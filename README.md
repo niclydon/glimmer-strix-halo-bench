@@ -118,6 +118,10 @@ by design:
   containing full production command lines, and no article number
   depends on them; the records document each window's verified
   restore in prose.
+- The longtext payload behind the Crucible longtext run. It is a real
+  weekly-synthesis payload, withheld on the same basis as the prose
+  payloads above. Its result file ships in `data/crucible-sweep/`
+  (the run returned no content; the file carries metrics only).
 
 Two mechanical changes were made to the public copies, and nothing
 else was altered: the four contact names used in the agent-suite test
