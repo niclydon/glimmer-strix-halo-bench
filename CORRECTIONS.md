@@ -126,3 +126,9 @@ raw data) produced further corrections, applied the same day:
   such; the README's withheld list now includes the longtext payload;
   FINAL-PASS's substitution note covers recorded outputs as well as
   prompts, and its path-occurrence count is corrected to 82.
+
+- Operational narrative in the records (sprint references, work-item
+  IDs, the production model roster, a host-wedge recipe) was
+  considered for trimming in this pass and deliberately left intact:
+  the records are contemporaneous evidence, none of it is secret,
+  and corrections ride in dated notes rather than rewrites.
