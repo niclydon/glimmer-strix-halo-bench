@@ -91,3 +91,5 @@ ARTICLE-DRAFT.md. No sentence of the body was changed in this pass;
 everything else in this document refers to the package as scanned.
 A post-review corrections pass followed on 2026-10-24; see
 `CORRECTIONS.md`.
+
+Published October 26, 2026 on dev.to: https://dev.to/niclydon/muse-glimmer-30b-on-strix-halo-a-week-of-measurements-48i4 - the repo was flipped public the same day, after the history sanitization recorded in CORRECTIONS.md. The post is the article text with absolute chart links, repo links, and one dated postscript (the prose seat was unloaded October 24, after the measurement week).
