@@ -132,3 +132,15 @@ raw data) produced further corrections, applied the same day:
   considered for trimming in this pass and deliberately left intact:
   the records are contemporaneous evidence, none of it is secret,
   and corrections ride in dated notes rather than rewrites.
+
+## History sanitization (October 26, 2026)
+
+The open publication decision from the first review (finding 14) is
+closed: the history was sanitized before any public flip. All six
+commits had their author and committer email replaced with the
+GitHub noreply address for this account (via git filter-repo) and
+the rewritten history was force-pushed while the repo is still
+private. File contents are unchanged: the tip tree hash is
+identical before and after the rewrite. Commit messages and
+tracked contents contained no email address. Future commits in
+this repo use the noreply identity (repo-local git config).
